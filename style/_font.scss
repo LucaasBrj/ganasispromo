@@ -1,0 +1,31 @@
+/* Font */
+@font-face {
+ font-family: "planetn";
+ src: url("../font/planetn.ttf") format("truetype");
+}
+@font-face {
+    font-family: "nova";
+    src: url("../font/FontsFree-Net-Proxima-Nova-Reg-It.otf") format("opentype");
+}
+@font-face {
+    font-family: "arcon";
+    src: url("../font/Arcon-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "vampire";
+  src: url("../font/vampirebrideexpand.ttf") format("truetype");
+}
+.planet {
+  font-family: "planetn", sans-serif;
+}
+
+.nova {
+  font-family: "nova", sans-serif;
+}
+
+.arcon{
+  font-family: "arcon", sans-serif;
+}
+.vampire{
+  font-family: "vampire", sans-serif;
+}

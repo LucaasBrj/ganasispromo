@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganasis</title>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style2.css">
+  <link rel="stylesheet" href="js/animate.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid mx-auto fb">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid py-4">
+                <a class="navbar-brand ms-lg-4 ps-lg-5" href="#"><img class="float-lg-end "
+                        src="images/ganasis_sec_home.png" alt="logo ganasis" width="100%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="my-auto ms-lg-2 ms-xxl-5 ms-0 pt-2">
+                            <div class="dropdown">
+
+                                <a class="dropdown-toggle text-decoration-none h3p" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    FR <span><img src="images/fleche_men.svg" alt="fleche" class="arrow_nav mb-1"></span>
+                                </a>
+
+                                <ul class="dropdown-menu droplang lh-base" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item lg" href="#">FR</a></li>
+                                    <li><a class="dropdown-item lg" href="#">EN</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2 bug">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle text-decoration-none h3nav" href="#" role="button"
+                                    id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    le jeu <span><img src="images/fleche_men.svg" alt="fleche" class="arrow_nav"></span>
+                                </a>
+
+                                <ul class="dropdown-menu dropmen lh-base" aria-labelledby="dropdownMenuLink2">
+                                    <li><a class="dropdown-item sub" href="#">l'histoire de ganasis</a></li>
+                                    <li>
+                                        <a class="dropdown-item sub" href="#">les regles du jeu</a>
+                                    </li>
+                                    <li><a class="dropdown-item sub" href="#">le teaser</a></li>
+                                    <li><a class="dropdown-item sub" href="#">le plateau</a></li>
+                                    <li><a class="dropdown-item sub" href="#">le packaging</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="#"
+                                class="text-decoration-none h3nav">la démo</a></li>
+                        <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="#"
+                                class="text-decoration-none h3nav">communauté</a></li>
+                        <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="#"
+                                class="text-decoration-none h3nav">contact</a></li>
+                        <li class="mrg_nav ms-0 my-auto pt-2">
+                            <button type="button" class="btn p-0 position-relative" data-bs-toggle="modal" data-bs-target="#cart">
+                                <img src="images/pictogramme panier.svg" alt="cart" width="38%" height="38%">
+                                <span class="position-absolute top-100 start-25 translate-middle badge rounded-pill bg-danger total-count"></span>
+                            </button>
+                        </li>
+                        <li class="ms-0  my-auto pt-3">
+                            <a href="#" data-name="Jeu" data-price="29.00"
+                                class="add-to-cart btn h3a m-0 acheter">acheter</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total : <span class="total-cart"></span>€</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="clear-cart btn btn-danger" data-bs-dismiss="modal">Vider</button>
+                    <button type="button" class="btn btn-primary">Acheter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/panier.js"></script>
+    <section id="synopsis">
+        <img id="minivaisseau" src="images/minivaisseau.svg"></img>
+        <div id="imgsynopsis">
+            <img src="images/packaging.png" id="imgtemporaire"></img>
+        </div>
+        <div id="txtsynopsis">
+            <img class="animate__animated animate__backInLeft"src="images/vaisseau.svg"></img>
+            <h1>L'histoire de ganasis</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur porta metus, tincidunt faucibus tortor venenatis sed. Morbi id hendrerit. Phasellus ante tellus, pretium et dolor ac, consectetur</p>
+            <button>OBTENIR GANASIS</button>
+        </div>
+    </section>
+    <img id="nuage" src="images/nuage.svg">
+    <div id="flechediv">
+    <a href="#description"><img id="flechenuage" src="images/fleche.png"></a>
+</div>
+    <section id="description">
+        <div id="txtdescription">
+            <h2>description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur porta metus, tincidunt faucibus tortor venenatis sed. Morbi id hendrerit. Phasellus ante tellus, pretium et dolor ac, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur porta metus, tincidunt faucibus tortor venenatis sed. Morbi id hendrerit. Phasellus ante tellus, pretium et dolor ac, consectetur</p>
+        </div>
+        <div id="imgdescription">
+            <img src="images/planete1.gif" id="imgtemporaire2"></img>
+        </div>
+    </section>
+    <section id="regles">
+        <div id="regletitre">
+        <h2>Règles du jeu</h2>
+        <div id="trait"></div>
+        </div>
+        <div id="regle1">
+            <img src="images/planete2.png" id="imgtemporaire3"></img>
+            <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. </p>
+        </div>
+        <div id="regle2">
+            <img src="images/planete3.png" id="imgtemporaire3-2"></img>
+            <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. </p>
+        </div>
+        <div id="regle3">
+            <img src="images/planete4.png" id="imgtemporaire3"></img>
+            <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. </p>
+        </div>
+        <img src="images/astronaute3.svg" id="astronaute" class="wow animate__animated animate__backInLeft"></img>
+    </section>
+    <img id="forme2" src="images/forme2.svg">
+    <div id="flechediv">
+        <a href="#teaser"><img id="flechenuage" src="images/fleche.png"></a>
+    </div>
+    <section id="teaser">
+        <iframe id="videotemporaire" src="https://www.youtube.com/embed/gwtbTyRyttg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        <img id="youtube" src="images/youtube_footer.png"></img>
+        <button id="test">TESTER LE JEU</button>
+        <button id="see">VOIR LE TEASER SUR <br />YOUTUBE</button>
+    </section>
+    <section id="cartes">
+        <div id="cartetitre">
+        <h2>les cartes</h2>
+        <div id="trait"></div>
+        </div>
+        <div id="wrapcarte">
+        <div id="carte1">
+            <div id="imgtemporaire5">
+                <img src="images/oxygene.png">
+            </div>
+            <p>Carte oxygène</p>
+        </div>
+        <div id="carte2">
+            <div id="imgtemporaire5"><img src="images/oxygene.png"></div>
+            <p>Carte oxygène</p>
+        </div>
+        <div id="carte3">
+            <div id="imgtemporaire5"><img src="images/oxygene.png"></div>
+            <p>Carte oxygène</p>
+        </div>
+        <div id="carte4">
+            <div id="imgtemporaire5"><img src="images/oxygene.png"></div>
+            <p>Carte oxygène</p>
+        </div>
+        <div id="carte5">
+            <div id="imgtemporaire5"><img src="images/oxygene.png"></div>
+            <p>Carte oxygène</p>
+        </div>
+        <div id="carte6">
+            <div id="imgtemporaire5"><img src="images/oxygene.png"></div>
+            <p>Carte oxygène</p>
+        </div>
+    </div>
+    </section>
+    <img id="nuage" src="images/nuage.svg">
+    <section id="fusee">
+        <img id="fuseeimg" src="images/fusee.svg">
+    </section>
+
+    <section id="plateau">
+        <div id="plateautitre">
+            <h2>Le jeu en images</h2>
+            <div id="trait"></div>
+            </div>
+        <img id="jaipur" src="images/jaipur.jpg"></img>
+        <button>ACHETER</button>
+    </section>
+    <section id="stats">
+        <div id="imgstats">
+            <img id="astronaute2" src="images/astronaute2.png"></img>
+
+        </div>
+        <div id="nbstats">
+            <div id="statsnb"><h7>2</h7><p>JOUEURS</p></div>
+            <div id="statsnb"><h7>20</h7><p>MIN</p></div>
+            <div id="statsnb"><h7>12</h7><p>A PARTIR DE</p></div>
+        </div>
+    </section>
+    <img src="images/forme3.svg">
+    <section id="newsletter">
+        <h3>Abonnez-vous à notre newsletter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur porta metus, tincidunt faucibus tortor venenatis sed. Morbi id hendrerit erat. Cras a volutpat erat. Vestibulum sodales diam ac lorem vulputate auctor.</p>
+        <div id="inputnewsletter">
+            <input type="text" placeholder="E-mail">
+            <button>S'ABONNER</button>
+        </div>
+        <img src="images/astronaute.png" id="astronautev2"></img>
+    </section>
+    <footer>
+        <section>
+        <div id="logofooter">
+            <img src="images/logonoir.svg">
+            <p>Saraceni tamen nec amici nobis umquam nec hostes optandi, ultro citroque discursantes quicquid. </p>
+        </div>
+        <div id="ganasisfooter">
+            <h8>LE JEU</h8>
+            <ul>
+                <li>Acheter le jeu</li>
+                <li>Découvrir le jeu</li>
+                <li>Jouer à la démo</li>
+                <li>Télécharger les flyers</li>
+            </ul>
+        </div>
+        <div id="proposfooter">
+                <h8>À PROPOS</h8>
+                <ul>
+                    <li>CGU / CGV</li>
+                    <li>Contact</li>
+                    <li>Gestion des cookies</li>
+                    <li>Mentions légales</li>
+                </ul>
+        </div>
+        <div id="reseauxfooter">
+                <h8>NOS RÉSEAUX</h8>
+                <div id="reseauxliste">
+                    <img src="images/facebook_footer.png"></img>
+                    <img src="images/instagram_footer.png"></img>
+                    <img src="images/youtube_footer.png"></img>
+                </div>
+        </div>
+    </section>
+    <p id="copyrights">Tous droits réservés © Refresh Agency 2022</p>
+    </footer>
+    
+</body>
+</html>

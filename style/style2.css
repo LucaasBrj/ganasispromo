@@ -1,0 +1,239 @@
+/* Couleur */
+/* Font */
+@font-face {
+  font-family: "planetn";
+  src: url("../font/planetn.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nova";
+  src: url("../font/FontsFree-Net-Proxima-Nova-Reg-It.otf") format("opentype");
+}
+@font-face {
+  font-family: "arcon";
+  src: url("../font/Arcon-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "vampire";
+  src: url("../font/vampirebrideexpand.ttf") format("truetype");
+}
+.planet, .h3nav, .h1m {
+  font-family: "planetn", sans-serif;
+}
+
+.nova, .h2m {
+  font-family: "nova", sans-serif;
+}
+
+.arcon, .pm, .h3p, .h3a {
+  font-family: "arcon", sans-serif;
+}
+
+.vampire, .acheter:hover, .acheter {
+  font-family: "vampire", sans-serif;
+}
+
+/* NAV */
+.h1m {
+  font-size: 50px;
+}
+
+.h2m {
+  font-size: 28px;
+  font-style: italic;
+}
+
+.h3nav {
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.h3a {
+  font-size: 18px !important;
+  color: #FFFFFF !important;
+}
+
+.h3p {
+  font-size: 16px !important;
+  color: #D2D2D2 !important;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.pm {
+  font-size: 25px;
+}
+
+.fb {
+  background: url("../images/fond_etoiles.svg");
+}
+
+.droplang {
+  min-width: 5rem !important;
+  text-align: center !important;
+  background-color: #F3F4F2 !important;
+  padding: 0 !important;
+  border-radius: 0% !important;
+  font-family: "arcon";
+  inset: inherit !important;
+  font-weight: bold;
+}
+
+.droplang, .dropmen {
+  position: absolute;
+  background: inherit;
+  border-top: solid 3px #003399 !important;
+  margin-top: 1.2em !important;
+}
+.droplang.hidden, .dropmen.hidden {
+  margin-top: 0.7em;
+  visibility: hidden;
+  opacity: 0;
+}
+.droplang:before, .dropmen:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #003399;
+  position: absolute;
+  top: -0.9em;
+  left: calc(56px / 2 - .9em);
+  content: "";
+  display: block;
+}
+
+.lg {
+  padding-top: 8% !important;
+  padding-bottom: 8% !important;
+  border-top: solid 1px #1E2663 !important;
+}
+
+.dropmen {
+  text-align: center !important;
+  background-color: #F3F4F2 !important;
+  padding: 0 !important;
+  min-width: 20rem !important;
+  inset: inherit !important;
+  font-family: "planetn";
+  border-radius: 0% !important;
+}
+
+.sub {
+  padding-top: 8% !important;
+  padding-bottom: 8% !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  border-top: solid 1px #003399 !important;
+}
+
+.dropdown-item {
+  color: #003399 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #003399 !important;
+  color: #F3F4F2 !important;
+}
+
+.dropdown-toggle::after {
+  display: inherit !important;
+  margin-left: 0 !important;
+  vertical-align: 0 !important;
+  content: "";
+  border: none !important;
+}
+
+.h3nav:after, .h3p:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.h3nav:hover:after, .h3p:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.arrow_nav {
+  transform: rotate(90deg) !important;
+  width: 1em;
+  max-width: 2em;
+}
+
+.acheter:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+.acheter {
+  transition: 0.5s;
+}
+
+.acheter:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+  border: none;
+}
+
+.acheter::after {
+  border:none;
+  content:"";
+  width: 100%;
+  height: 101%;
+  border-radius: 100px;
+  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-left: -143px;
+  margin-top: -6px;
+}
+
+.acheter {
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  font-family: "vampire";
+  border-radius: 100px;
+  border: none;
+  margin-top: 50px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  display: flex;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  text-transform: uppercase;
+  transition: 0.5s;
+  
+}
+
+
+.mrg_nav {
+  min-width: 150px;
+}
+
+@media (max-width:1700px) {
+
+  .float-lg-end {
+    width: 300%;
+    margin-right: -20px;
+    margin-top: -10px;
+  }
+
+}
+
+/*# sourceMappingURL=style.css.map */

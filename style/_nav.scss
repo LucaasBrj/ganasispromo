@@ -1,0 +1,162 @@
+/* NAV */
+$btn-size:56px;
+
+.h1m{
+    @extend .planet;
+    font-size: 50px;
+}
+
+.h2m{
+    @extend .nova;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.h3nav{
+    @extend .planet;
+    font-size: 16px !important;
+    color: $blanc !important;
+    position: relative;
+    padding: 10px 0px;
+}
+.h3a{
+  @extend .arcon;
+  font-size: 18px !important;
+  color: $blanc !important;
+}
+.h3p{
+  @extend .arcon;
+  font-size: 16px !important;
+  color: $D2 !important;
+  position: relative;
+  padding: 10px 0px;
+}
+.pm{
+    @extend .arcon;
+    font-size: 25px;
+}
+
+.fb{
+  background-color: $dominante;
+}
+.droplang{
+  min-width: 5rem !important;
+  text-align: center !important;
+  background-color: $blancG !important;
+  padding: 0 !important;
+  border-radius: 0% !important;
+  font-family: 'arcon';
+  inset: inherit !important;
+  font-weight: bold;
+
+}
+
+
+.droplang, .dropmen{
+  position: absolute;
+  background: inherit;
+  border-top: solid 3px $secondaire !important;
+  margin-top: 1.2em !important;
+  &.hidden {
+    margin-top: .7em;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &:before { 
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid $secondaire;
+    position: absolute;
+    top: -.9em;
+    left: calc(#{$btn-size} / 2 - .9em);
+    content: "";
+    display: block;
+  }
+}
+
+.lg{
+  padding-top: 8% !important;
+  padding-bottom: 8% !important;
+  border-top: solid 1px  $dominante !important;
+}
+.dropmen{
+  text-align: center !important;
+  background-color: $blancG !important;
+  padding: 0 !important;
+  min-width: 20rem !important;
+  inset: inherit !important;
+  font-family: 'planetn';
+  border-radius: 0% !important;
+}
+.sub{
+  padding-top: 8% !important;
+  padding-bottom: 8% !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  border-top: solid 1px  $secondaire !important;
+}
+.dropdown-item{
+  color: $secondaire !important;
+}
+.dropdown-item:hover{
+  background-color: $secondaire !important;
+  color: $blancG !important;
+
+}
+.dropdown-toggle::after{
+  display: inherit !important;
+    margin-left: 0 !important;
+    vertical-align: 0 !important;
+    content: "";
+    border: none !important;
+
+}
+
+.h3nav:after, .h3p:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.h3nav:hover:after, .h3p:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.arrow_nav{
+  transform:rotate(90deg) !important;
+  width: 1em;
+  max-width: 2em;
+}
+
+@mixin btn($btn-nav-color){
+  background: $btn-nav-color;
+  text-transform: uppercase;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  @extend .vampire
+}
+
+.acheter{
+  @include btn(linear-gradient(90deg, #7768FF 5.1%, #44C8FF 96.12%));
+}
+.acheter:hover{
+  @include btn(linear-gradient(90deg, #43C8FF 7.9%, #7667FF 84.79%));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mrg_nav{
+    min-width: 150px;
+}
+@media screen and (min-width: 900px) {
+    
+}
