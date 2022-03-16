@@ -15,6 +15,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body class="scrollbar" id="style-1">
@@ -95,19 +105,19 @@
     </div>
 
     <!-- contact -->
-    <div class="container-fluid m-0 p-0" id="contact-bg">
+    <div class="container-fluid m-0 p-0 pt-5" id="contact-bg">
 
         <div class="container" id="contact-page">
             <div class="bg-light form-cont-card">
                 <div class="text-center">
-                    <img src="/img/rond-favicon.svg" alt="tete ganasis" id="tete-ganasis" width="50px">
-                    <div class="mx-5 mt-3">
-                        <p>Formulaire de contact</p>
-                        <p>Une question sur le jeu Ganasis ? Un problème rencontré sur le site ? N’attendez plus et
+                    <img src="/img/rond-perso.svg" alt="tete ganasis" id="tete-ganasis" class="rond" width="50px">
+                    <div class="mx-5 mt-3 ">
+                        <p class="planet">Formulaire de contact</p>
+                        <p class="mb-5 arcon">Une question sur le jeu Ganasis ? Un problème rencontré sur le site ? N’attendez plus et
                             contactez-nous dès maintenant
                             via le formulaire ci-dessous.</p>
 
-                        <div class="form-contact">
+                        <div class="form-contact arcon">
                             <form action="" class="form">
                                 <div class="col-nav input-effect">
                                     <input class="effect-17" type="text" placeholder="" name="nom">
@@ -129,15 +139,17 @@
                                     <label for="âge">Âge</label>
                                     <span class="focus-border"></span>
                                 </div>
-                                
+
                                 <div class="col-nav fullwidth input-effect">
-                                    <textarea class="fullmaxwidth effect-19" placeholder="" rows="3" name="message"></textarea>
+                                    <textarea class="fullmaxwidth effect-19" placeholder="" rows="3"
+                                        name="message"></textarea>
                                     <label for="message">Message</label>
                                     <span class="focus-border"></span>
                                 </div>
-                                                                
 
-                                <button class="btn h3a m-0 submit">Envoyer</button>
+                                <div class="text-center fullwidth mt-2"><button class="btn h3a submit mt-2">Envoyer</button>
+                                </div>
+
 
                             </form>
                         </div>
@@ -200,6 +212,7 @@
         </section>
         <p id="copyrights">Tous droits réservés © Refresh Agency 2022</p>
     </footer>
+    <script src="js/panier.js"></script>
 </body>
 
 </html>

@@ -45,6 +45,14 @@
 }
 
 /* NAV */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("../images/hamburger.svg") !important;
+}
+
+.navbar-toggler {
+  margin: 0 auto !important;
+}
+
 .h1m {
   font-size: 50px;
 }

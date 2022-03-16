@@ -46,6 +46,14 @@
 }
 
 /* NAV */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("../images/hamburger.svg") !important;
+}
+
+.navbar-toggler {
+  margin: 0 auto !important;
+}
+
 .h1m {
   font-size: 50px;
 }
@@ -350,72 +358,6 @@ footer ul {
   margin-top: 100px;
 }
 
-body {
-  margin: auto;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-#style-1 {
-  scrollbar-color: #373737, #8683FD;
-  scrollbar-color: thin;
-}
-#style-1::-webkit-scrollbar-track {
-  background-color: #373737;
-}
-#style-1::-webkit-scrollbar {
-  width: 10px !important;
-  background-color: #373737;
-}
-#style-1::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: #8683FD;
-}
-
-#contact-bg {
-  background: url("../img/fond_étoiles.svg");
-  height: 80vh;
-  max-width: 100%;
-  position: relative;
-}
-
-#contact-bot-img {
-  max-width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-#tete-ganasis {
-  position: relative;
-  transform: translateY(-50%);
-}
-
-.form-cont-card {
-  height: 70vh !important;
-  width: 40% !important;
-  margin: auto;
-}
-
-/* form */
-.form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.fullwidth {
-  grid-column: span 2;
-}
-
-.fullmaxwidth {
-  width: 100%;
-  height: 100%;
-}
-
-input, textarea {
-  padding: 5px;
-}
-
 :focus {
   outline: none;
 }
@@ -578,12 +520,103 @@ textarea {
   transition: 0.3s;
 }
 
-.submit:hover {
-  transform: scale(105%);
-  transition: 0.5s;
+body {
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#style-1 {
+  scrollbar-color: #373737, #8683FD;
+  scrollbar-color: thin;
+}
+#style-1::-webkit-scrollbar-track {
+  background-color: #373737;
+}
+#style-1::-webkit-scrollbar {
+  width: 10px !important;
+  background-color: #373737;
+}
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #8683FD;
+}
+
+#contact-bg {
+  background: url("../img/fond_étoiles.svg");
+  height: 97vh;
+  max-width: 100%;
+  position: relative;
+}
+
+#contact-bot-img {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#tete-ganasis {
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.rond {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(90deg, #6FCFFF -17.04%, #7768FF 120.11%);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.form-cont-card {
+  height: 80vh !important;
+  width: 40% !important;
+  margin: auto;
+}
+
+/* form */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.fullwidth {
+  grid-column: span 2;
+}
+
+.fullmaxwidth {
+  width: 100%;
+  height: 100%;
+}
+
+input, textarea {
+  padding: 5px;
 }
 
 .submit {
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  font-family: "vampire";
+  border-radius: 100px;
+  border: none;
+  margin-top: 50px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  display: flex;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  transform: scale(105%);
   transition: 0.5s;
 }
 
@@ -608,24 +641,20 @@ textarea {
   margin-top: -6px;
 }
 
-.submit {
-  margin-top: 45px;
-  font-size: 30px;
-  color: white;
-  font-family: "vampire";
-  border-radius: 100px;
-  border: none;
-  margin-top: 50px;
-  font-size: 30px;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
-  display: flex;
-  border-radius: 36px !important;
-  padding-left: 3.65em !important;
-  padding-right: 3.65em !important;
-  text-transform: uppercase;
-  transition: 0.5s;
+/* responsive */
+@media only screen and (max-width: 1400px) {
+  .form-cont-card {
+    height: 100vh !important;
+    width: 50% !important;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .form-cont-card {
+    height: 80vh !important;
+    width: 80% !important;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */
