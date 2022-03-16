@@ -1040,10 +1040,9 @@ h7 {
   z-index: 1;
 }
 
-nav {
-  margin-left: 50px;
-}
-
+/* nav {
+    margin-left: 50px;
+} */
 @media (max-width: 1700px) {
   body {
     overflow-x: hidden;
