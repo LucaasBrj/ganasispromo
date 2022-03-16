@@ -1,0 +1,26 @@
+@mixin scrollbar($bg_color_track, $bg_color_scroll, $width ) {
+    scrollbar-color: $bg_color_track, $bg_color_scroll;
+    scrollbar-color: thin; 
+
+    &::-webkit-scrollbar-track{
+        background-color: $bg_color_track;
+    }
+
+    &::-webkit-scrollbar{
+        width: $width;
+        background-color: $bg_color_track;
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        border-radius: 4px;
+        background-color: $bg_color_scroll;
+    }
+}
+@mixin btn($btn-nav-color){
+  background: $btn-nav-color;
+  text-transform: uppercase;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  @extend .vampire
+}

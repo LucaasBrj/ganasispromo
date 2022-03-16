@@ -1,3 +1,4 @@
+@import 'mixin';
 /* NAV */
 $btn-size:56px;
 
@@ -138,25 +139,59 @@ $btn-size:56px;
   max-width: 2em;
 }
 
-@mixin btn($btn-nav-color){
-  background: $btn-nav-color;
-  text-transform: uppercase;
+
+.acheter:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+.acheter {
+  transition: 0.5s;
+}
+
+.acheter:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+  border: none;
+}
+
+.acheter::after {
+  border:none;
+  content:"";
+  width: 100%;
+  height: 101%;
+  border-radius: 100px;
+  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-left: -143px;
+  margin-top: -6px;
+}
+
+.acheter {
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  font-family: "vampire";
+  border-radius: 100px;
+  border: none;
+  margin-top: 50px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
   padding-right: 3.65em !important;
-  @extend .vampire
+  text-transform: uppercase;
+  transition: 0.5s;
+  
 }
 
-.acheter{
-  @include btn(linear-gradient(90deg, #7768FF 5.1%, #44C8FF 96.12%));
-}
-.acheter:hover{
-  @include btn(linear-gradient(90deg, #43C8FF 7.9%, #7667FF 84.79%));
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.mrg_nav{
-    min-width: 150px;
-}
-@media screen and (min-width: 900px) {
-    
+
+.mrg_nav {
+  min-width: 150px;
 }

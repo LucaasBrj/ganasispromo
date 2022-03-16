@@ -1,22 +1,46 @@
 /* Font */
 @font-face {
- font-family: "planetn";
- src: url("../font/planetn.ttf") format("truetype");
+ font-family: "planetN";
+ src: url("../font/planetn.ttf") format("truetype"),
+      url('../font/planetnital-webfont.woff2') format('woff2'),
+      url('../font/planetnital-webfont.woff') format('woff');
 }
+
+@font-face {
+    font-family: "planetNcond";
+    src: url('../font/planetncompact.ttf') format('truetype');
+}
+
 @font-face {
     font-family: "nova";
     src: url("../font/FontsFree-Net-Proxima-Nova-Reg-It.otf") format("opentype");
 }
 @font-face {
-    font-family: "arcon";
-    src: url("../font/Arcon-Regular.otf") format("opentype");
+    font-family: "arconregular";
+    src: url("../font/Arcon-Regular.otf") format("opentype"),
+         url('../font/arcon-regular-webfont.woff2') format('woff2'),
+         url('../font/arcon-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
   font-family: "vampire";
-  src: url("../font/vampirebrideexpand.ttf") format("truetype");
+  src: url("../font/vampirebrideexpand.ttf") format("truetype"),
+       url('../font/vampirebrideexpand.otf') format('otf'),
+       url('../font/vampirebrideexpand.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'arconrounded-regular';
+    src: url('../font/arcon-rounded-regular-webfont.woff2') format('woff2'),
+         url('../font/arcon-rounded-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 .planet {
-  font-family: "planetn", sans-serif;
+  font-family: "planetN", sans-serif;
 }
 
 .nova {
@@ -24,7 +48,7 @@
 }
 
 .arcon{
-  font-family: "arcon", sans-serif;
+  font-family: "arconregular", sans-serif;
 }
 .vampire{
   font-family: "vampire", sans-serif;
