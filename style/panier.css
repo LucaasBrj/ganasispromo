@@ -461,15 +461,14 @@ body {
 
 #panier-bg {
   background: url("../images/fond_étoiles.svg");
-  height: 90vh;
   max-width: 100%;
-  position: relative;
 }
 
 #nuage {
   width: 110%;
   margin-left: -70px;
   height: 100%;
+  z-index: -1;
 }
 
 #cont-pan {
@@ -479,6 +478,10 @@ body {
 
 footer {
   background-color: #1E2663;
+}
+
+.votpan {
+  font-size: 4rem;
 }
 
 /*# sourceMappingURL=panier.css.map */
