@@ -17,9 +17,23 @@ body {
 @include scrollbar($noir, $toniqueR, 10px !important);
 }
 
-#contact-bg{
+#panier-bg{
     background: url('../images/fond_étoiles.svg');
-    height: 97vh;
+    height: 90vh;
     max-width: 100%;
     position:relative;
+}
+#nuage{
+    width: 110%;
+    margin-left: -70px;
+    height: 100%;
+}
+
+#cont-pan{
+    min-height: 90vh;
+    margin-top: 10%;
+}
+
+footer {
+    background-color: $dominante;
 }
