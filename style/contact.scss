@@ -2,7 +2,7 @@
 @import 'font';
 @import 'nav';
 @import 'mixin';
-@import 'footer';
+//@import 'footer';
 @import 'effet_contact';
 body {
     margin: auto;
@@ -44,6 +44,9 @@ body {
     height: 80vh !important;
     width: 40% !important;
     margin: auto;
+}
+footer {
+    background-color: $dominante;
 }
 
 /* form */
@@ -112,17 +115,61 @@ input, textarea {
  /* responsive */
 
 @media only screen and (max-width: 1400px){
+  #contact-bg{
+    height: 100vh;
+  }
   .form-cont-card{
-    height: 100vh !important;
+    height: 90vh !important;
     width: 50% !important;
     margin: auto;
 }
 }
 @media only screen and (max-width: 775px){
+  #contact-bg{
+    height: 90vh;
+  }
   .form-cont-card{
     height: 80vh !important;
     width: 80% !important;
     margin: auto;
 }
 }
+@media only screen and (max-width: 775px){
+.container{
+  text-align: center !important;
+}
+.list-group{
+  justify-content: center;
+}
+}
+footer{
+  
+  a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #212529;
+}
+li{
+  padding-top: 5%;
+}
+.list-group-horizontal li{
+  padding-top: 2%;
+}
+}
