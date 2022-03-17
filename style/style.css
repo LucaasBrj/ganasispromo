@@ -1084,6 +1084,18 @@ h7 {
     overflow-x: hidden;
   }
 
+  #imgtemporaire {
+    margin-left: -50px;
+    margin-top: -100px;
+  }
+
+  #imgtemporaire img {
+    width: 150%;
+  }
+
+  #synopsis {
+    margin-top: -200px;
+  }
   #astronaute {
     top: 3800px;
   }
@@ -1097,7 +1109,7 @@ h7 {
   }
 
   #txtsynopsis img {
-    width: 110%;
+    width: 100%;
     margin-top: -500px;
   }
 
