@@ -1025,6 +1025,29 @@ h7 {
   color: #c4c4c4;
 }
 
+#hautpage {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: #0c1244;
+  z-index: 50;
+  border-radius: 500px;
+  transition: 0.5s;
+  margin-left: 1750px;
+  margin-top: 650px;
+}
+
+#hautpage img {
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 20px;
+  transform: rotate(180deg);
+}
+
+#hautpage:hover {
+  transform: scale(108%);
+}
+
 #newsletter button:hover::after {
   opacity: 1;
 }
