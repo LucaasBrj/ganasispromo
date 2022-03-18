@@ -1690,6 +1690,10 @@ h7 {
   footer {
     height: 500px;
   }
+
+  #minivaisseau {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
