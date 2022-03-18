@@ -1221,15 +1221,20 @@ h7 {
   #imgsynopsis {
     margin-left: 140px;
     margin-top: 50px;
-    width: 650px;
+  }
+
+  #txtsynopsis {
+    width: 100%;
   }
 
   #txtsynopsis p {
+    width: 100%;
     font-size: 50px;
     padding-bottom: 100px;
   }
 
   #txtsynopsis h1 {
+    width: 100%;
     margin-top: 100px;
     text-align: center;
   }
@@ -1241,16 +1246,18 @@ h7 {
   }
 
   #txtdescription {
-    margin-left: 100px;
+    margin-left: none;
     align-items: center;
   }
 
   #txtdescription p {
-    font-size: 50px;
+    font-size: 30px;
+    width: 350px;
   }
 
   #txtdescription h2 {
-    font-size: 60px;
+    width: 350px;
+    font-size: 30px;
   }
 
   #imgdescription {
@@ -1332,6 +1339,11 @@ h7 {
     display: flex;
   }
 
+  #imgtemporaire2 {
+    height: 250px;
+    width: 250px;
+  }
+
   #youtube {
     display: flex;
     width: 23%;
@@ -1397,6 +1409,8 @@ h7 {
   }
 
   #astronaute2 {
+    width: 20%;
+    height: 20%;
     margin-bottom: 150px;
   }
 
@@ -1408,11 +1422,12 @@ h7 {
   }
 
   body {
-    width: 100%;
+    max-width: 100% !important;
     overflow-x: hidden;
   }
 
   #newsletter h3 {
+    width: 100%;
     font-size: 60px;
     text-align: center;
   }
@@ -1433,6 +1448,7 @@ h7 {
   }
 
   #newsletter input {
+    display: none;
     width: 700px;
     height: 70px;
     border-bottom: white solid 3px;
@@ -1446,6 +1462,7 @@ h7 {
   }
 
   #newsletter button {
+    display: none;
     height: 100px;
     font-size: 50px;
   }
@@ -1515,6 +1532,36 @@ h7 {
   #nuage {
     width: 106%;
     margin-top: -200px;
+  }
+
+  #imgtemporaire {
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+  }
+
+  #imgtemporaire5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 450px;
+    background-color: white;
+    font-family: "arconregular";
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+    margin: 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #imgtemporaire5 img {
+    width: 94%;
+    height: 96%;
+    border-radius: 50px;
   }
 }
 
