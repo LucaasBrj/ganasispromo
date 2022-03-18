@@ -35,6 +35,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+html {
+  overflow-x: hidden;
+}
 .planet,
 .h3nav,
 .h1m {
@@ -543,6 +547,11 @@ body {
   cursor: pointer;
 }
 
+#forme3 {
+  width: 105%;
+  margin-left: -5px;
+}
+
 #description {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1025,6 +1034,29 @@ h7 {
   color: #c4c4c4;
 }
 
+#hautpage {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: #0c1244;
+  z-index: 50;
+  border-radius: 500px;
+  transition: 0.5s;
+  margin-left: 1750px;
+  margin-top: 650px;
+}
+
+#hautpage img {
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 20px;
+  transform: rotate(180deg);
+}
+
+#hautpage:hover {
+  transform: scale(108%);
+}
+
 #newsletter button:hover::after {
   opacity: 1;
 }
@@ -1196,38 +1228,65 @@ h7 {
   }
 
   #imgsynopsis {
-    margin-left: 140px;
-    margin-top: 50px;
-    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  #txtsynopsis {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 5%;
+    justify-content: center;
   }
 
   #txtsynopsis p {
-    font-size: 50px;
-    padding-bottom: 100px;
+    width: 100%;
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #txtsynopsis h1 {
+    width: 100%;
+    font-size: 40px;
     margin-top: 100px;
     text-align: center;
   }
 
+  #txtsynopsis button {
+    margin-top: -3%;
+    margin-bottom: 20%;
+    transform: scale(80%);
+  }
+
   #description {
+    margin-top: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   #txtdescription {
-    margin-left: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: none;
     align-items: center;
   }
 
   #txtdescription p {
-    font-size: 50px;
+    font-size: 30px;
+    width: 350px;
   }
 
   #txtdescription h2 {
-    font-size: 60px;
+    width: 350px;
+    font-size: 40px;
+    margin-left: -5%;
   }
 
   #imgdescription {
@@ -1244,13 +1303,28 @@ h7 {
   }
 
   #regles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
     padding-bottom: 100px;
   }
 
   #regles h2 {
-    font-size: 60px;
-    margin-left: 15%;
+    font-size: 40px;
+    margin: 0;
     text-align: center;
+  }
+
+  #imgtemporaire3 {
+    margin: 0;
+    width: 200px;
+  }
+
+  #imgtemporaire3-2 {
+    margin: 0;
+    width: 150px;
   }
 
   #astronaute {
@@ -1267,6 +1341,18 @@ h7 {
     flex-direction: column;
     align-items: center;
     font-size: 50px;
+  }
+
+  .txtregles {
+    margin-top: 5%;
+    font-size: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+  }
+
+  .txtregles br {
+    display: none;
   }
 
   #regle2 {
@@ -1290,10 +1376,9 @@ h7 {
   }
 
   #teaser {
-    margin-top: 0;
     padding-top: 0;
-    height: 800px;
-    margin-top: 190px;
+    height: 500px;
+    margin-top: 60%;
   }
 
   #teaser #test {
@@ -1301,47 +1386,64 @@ h7 {
   }
 
   #teaser #see {
-    font-size: 45px;
-    height: 160px;
+    font-size: 30px;
+    height: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 150px;
     display: flex;
   }
 
+  #imgtemporaire2 {
+    height: 350px;
+    width: 350px;
+  }
+
   #youtube {
     display: flex;
-    width: 23%;
+    width: 40%;
   }
 
   #cartes h2 {
-    font-size: 60px;
-    margin-left: 22%;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    text-align: center;
   }
 
   #cartes {
     margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
   }
 
   #astronautev2 {
     display: none;
   }
 
+  #plateau {
+    margin-top: 10%;
+    height: 700px;
+  }
+
   #plateau h2 {
-    font-size: 60px;
+    font-size: 40px;
+    text-align: center;
   }
 
   #fuseeimg {
-    width: 40%;
+    display: none;
   }
 
   #jaipur {
+    margin-top: 10%;
     width: 90%;
   }
 
   #plateau button {
-    font-size: 55px;
-    height: 200px;
+    font-size: 35px;
+    height: 80px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 150px;
@@ -1350,6 +1452,7 @@ h7 {
   #stats {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
   }
 
   #nbstats {
@@ -1360,11 +1463,13 @@ h7 {
   #statsnb {
     display: flex;
     flex-direction: column;
+    margin-right: 1%;
   }
 
   #statsnb p {
     margin-top: 20px;
-    font-size: 70px;
+    font-size: 50px;
+    margin-bottom: 35%;
   }
 
   h6 {
@@ -1373,35 +1478,54 @@ h7 {
     margin-right: 0;
   }
 
+  h7 {
+    margin: 0;
+    font-size: 150px;
+  }
+
   #astronaute2 {
-    margin-bottom: 150px;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 50px;
   }
 
   #imgstats {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 10%;
+    margin-top: -20%;
   }
 
   body {
-    width: 100%;
+    max-width: 100% !important;
     overflow-x: hidden;
   }
 
-  #newsletter h3 {
-    font-size: 60px;
-    text-align: center;
-  }
-
-  #newsletter p {
-    font-size: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+  #forme3 {
+    width: 101%;
+    margin: 0;
+    margin-top: -80%;
   }
 
   #newsletter {
-    height: 1050px;
+    margin-top: -40%;
+    height: 550px;
+  }
+
+  #newsletter h3 {
+    width: 100%;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  #newsletter p {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   #inputnewsletter {
@@ -1410,21 +1534,26 @@ h7 {
   }
 
   #newsletter input {
-    width: 700px;
-    height: 70px;
+    width: 100%;
+    height: 30px;
     border-bottom: white solid 3px;
+    margin-top: 10%;
+    margin-bottom: 20%;
   }
 
   #newsletter input::placeholder {
     font-family: "arconregular";
     color: white;
     padding-left: 30px;
-    font-size: 50px;
+    font-size: 20px;
   }
 
   #newsletter button {
     height: 100px;
     font-size: 50px;
+    margin: 0;
+    transform: scale(40%);
+    margin-top: -20%;
   }
 
   footer section {
@@ -1432,14 +1561,26 @@ h7 {
     flex-direction: column;
   }
 
+  #logofooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #logofooter img {
-    width: 90%;
+    margin: 0;
+    margin-left: 17%;
     height: 160px;
   }
 
   #logofooter p {
-    font-size: 45px;
-    margin-bottom: 100px;
+    margin-left: 17%;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 25px;
+    margin-bottom: 10%;
+    margin-top: 0;
   }
 
   #responsivefooter {
@@ -1459,10 +1600,12 @@ h7 {
   }
 
   #ganasisfooter {
+    display: none;
     margin-right: 50px;
   }
 
   #proposfooter {
+    display: none;
     margin-left: 50px;
   }
 
@@ -1471,15 +1614,26 @@ h7 {
   }
 
   #reseauxfooter {
+    color: white;
     background: #1e2663;
     padding-top: 40px;
     padding-bottom: 110px;
     z-index: -50;
+    height: 30px;
+  }
+
+  h8 {
+    display: none;
+    color: white;
   }
 
   #reseauxliste img {
     width: 10%;
-    margin-left: 70px;
+  }
+
+  #reseauxliste {
+    margin-left: 16%;
+    margin-top: 2%;
   }
 
   #copyrights {
@@ -1491,7 +1645,54 @@ h7 {
 
   #nuage {
     width: 106%;
-    margin-top: -200px;
+    margin: 0;
+    margin-top: -40%;
+    margin-left: -5.5%;
+  }
+
+  #flechenuage {
+    display: none;
+    transform: scale(70%);
+    margin-top: 120%;
+  }
+
+  #imgtemporaire {
+    width: 100%;
+    height: 100%;
+    margin-top: 170px;
+    margin-left: 10px;
+  }
+
+  #imgtemporaire5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 450px;
+    background-color: white;
+    font-family: "arconregular";
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+    margin: 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #imgtemporaire5 img {
+    width: 94%;
+    height: 96%;
+    border-radius: 50px;
+  }
+
+  footer {
+    height: 500px;
+  }
+
+  #minivaisseau {
+    display: none;
   }
 }
 
