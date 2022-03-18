@@ -35,6 +35,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+html {
+  overflow-x: hidden;
+}
 .planet,
 .h3nav,
 .h1m {
