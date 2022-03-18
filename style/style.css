@@ -45,6 +45,10 @@
 }
 
 /* NAV */
+.logonav {
+  min-width: 80px;
+}
+
 .navbar-dark .navbar-toggler-icon {
   background-image: url("../images/hamburger.svg") !important;
 }
