@@ -1,6 +1,6 @@
 @mixin scrollbar($bg_color_track, $bg_color_scroll, $width ) {
     scrollbar-color: $bg_color_track, $bg_color_scroll;
-    scrollbar-color: thin; 
+    scrollbar-width: thin; 
 
     &::-webkit-scrollbar-track{
         background-color: $bg_color_track;
