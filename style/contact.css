@@ -444,12 +444,12 @@ textarea {
 body {
   margin: auto;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 #style-1 {
   scrollbar-color: #373737, #8683FD;
   scrollbar-width: thin;
+  overflow-y: scroll;
 }
 #style-1::-webkit-scrollbar-track {
   background-color: #373737;
