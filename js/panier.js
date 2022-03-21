@@ -27,7 +27,10 @@ var shoppingCart = (function () {
     if (sessionStorage.getItem("shoppingCart") != null) {
         loadCart();
     }
-
+    
+   
+    
+    
 
     // =============================
     // Public methods and propeties
@@ -173,6 +176,12 @@ function displayCart() {
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
+    if (cartArray.length === 0) {
+        $("#panshow").hide();
+        console.log(cart)
+    } else {
+        $("#panshow").show();
+    }
 }
 
 // Delete item button
