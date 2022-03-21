@@ -396,7 +396,7 @@ body {
 
 #style-1 {
   scrollbar-color: #373737, #8683fd;
-  scrollbar-color: thin;
+  scrollbar-width: thin;
 }
 #style-1::-webkit-scrollbar-track {
   background-color: #373737;
