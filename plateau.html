@@ -93,6 +93,52 @@
             </div>
         </div>
     </section>
-    <div id="hud">FUTUR HUD</div>
+    <div id="hud"><img src="images/hud.svg"></div>
+    <div id="cache">
+        <button id="cachecontenu">Pour une meilleure experience de jeu, cliquez ici pour mettre votre navigateur en plein écran</button>
+    </div>
+    <div id="fond">
+        <img src="images/fondplateau.svg">
+    </div>
+    <script>
+        const enterFullScreen = function( element ){
+  if( element.requestFullScreen ){
+    element.requestFullScreen();
+  } else if ( element.webkitRequestFullScreen ){
+    element.webkitRequestFullScreen( Element.ALLOW_KEYBOARD_INPUT );
+  } else if ( element.mozRequestFullScreen ){
+    element.mozRequestFullScreen();
+  }
+};
+ 
+document.querySelector( '#cachecontenu' ).addEventListener( 'click', function( ev ){
+  enterFullScreen( document.body );
+
+}, false );
+        </script>
+        <script>
+            const reFullScreen = function( element ){
+      if( element.requestFullScreen ){
+        element.requestFullScreen();
+      } else if ( element.webkitRequestFullScreen ){
+        element.webkitRequestFullScreen( Element.ALLOW_KEYBOARD_INPUT );
+      } else if ( element.mozRequestFullScreen ){
+        element.mozRequestFullScreen();
+      }
+    };
+     
+    document.querySelector( '#cachecontenu' ).addEventListener( 'click', function( ev ){
+      enterFullScreen( document.body );
+    
+    }, false );
+            </script>
+        <script>
+            $(document).ready(function(){     
+    //Dès qu'on clique sur #b1, on applique hide() au titre
+    $("#cachecontenu").click(function(){
+        $("#cache").hide();
+    });
+});
+        </script>
 </body>
 </html>

@@ -1,32 +1,75 @@
+/* Couleur */
+/* Font */
+@font-face {
+  font-family: "planetN";
+  src: url("../font/planetn.ttf") format("truetype"),
+    url("../font/planetnital-webfont.woff2") format("woff2"),
+    url("../font/planetnital-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "planetNcond";
+  src: url("../font/planetncompact.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nova";
+  src: url("../font/FontsFree-Net-Proxima-Nova-Reg-It.otf") format("opentype");
+}
+@font-face {
+  font-family: "arconregular";
+  src: url("../font/Arcon-Regular.otf") format("opentype"),
+    url("../font/arcon-regular-webfont.woff2") format("woff2"),
+    url("../font/arcon-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "vampire";
+  src: url("../font/vampirebrideexpand.ttf") format("truetype"),
+    url("../font/vampirebrideexpand.otf") format("otf"),
+    url("../font/vampirebrideexpand.ttf") format("truetype");
+}
+@font-face {
+  font-family: "arconrounded-regular";
+  src: url("../font/arcon-rounded-regular-webfont.woff2") format("woff2"),
+    url("../font/arcon-rounded-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   display: flex;
-  background-image: url("../images/fond_etoiles.svg");
+  background-image: url("../images/fontplateau.png");
+  background-position: -3px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 section {
-  margin-top: 2%;
-  background-color: rgb(93, 93, 196);
-  width: 80%;
-  height: 820px;
+  margin-top: 100px;
+  background: rgba(32, 35, 77, 0.75);
+  width: 87%;
+  height: 930px;
+  border-radius: 50px;
+  border: white solid 1px;
 }
 
 #emplacement1 {
-  border: 4px dashed black;
+  border: 4px dashed rgb(255, 255, 255);
   border-style: d;
-  width: 200px;
-  height: 280px;
-  margin-top: 4%;
-  margin-left: 2%;
+  width: 188px;
+  height: 238px;
+  margin-top: 0.9%;
+  margin-left: 36%;
   border-radius: 20px;
 }
 
 #emplacement2 {
-  border: 4px dashed black;
-  width: 280px;
-  height: 200px;
-  margin-top: 2%;
+  border: 4px dashed rgb(255, 255, 255);
+  width: 260px;
+  height: 150px;
+  margin-top: 1%;
   margin-left: 2%;
   border-radius: 20px;
 }
@@ -37,16 +80,18 @@ section {
 }
 
 #pioche {
+  z-index: 80;
+  top: 120px;
+  left: 480px;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: white;
-  height: 295px;
-  width: 215px;
+  height: 240px;
+  width: 190px;
   margin-left: 1.5%;
   margin-top: 1%;
-  box-shadow: 7px 7px 25px rgb(32, 32, 32);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -56,16 +101,16 @@ section {
 }
 
 #pioche img {
-  height: 280px;
-  width: 200px;
+  height: 240px;
+  width: 190px;
   margin-left: 2%;
-  margin-top: 2%;
+  margin-top: 0%;
   border-radius: 20px;
 }
 
 .carte img {
-  height: 280px;
-  width: 200px;
+  height: 295px;
+  width: 215px;
   border-radius: 20px;
 }
 
@@ -73,18 +118,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  background-color: white;
-  height: 295px;
-  width: 215px;
 }
 
 #cartesmain {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
-  margin-top: -26%;
-  margin-left: 18%;
+  margin-top: 1%;
+  margin-left: 23%;
 }
 
 #carte2 {
@@ -105,7 +146,7 @@ section {
   flex-wrap: wrap;
   border-radius: 20px;
   margin-top: 4%;
-  margin-left: 22%;
+  margin-left: 28%;
 }
 
 #carte2-2 {
@@ -176,9 +217,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
-  margin-top: -60%;
+  margin-top: -53%;
   transform: rotate(180deg);
-  margin-right: 17%;
+  margin-right: 10%;
 }
 
 .carteennemi {
@@ -186,22 +227,18 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background-color: white;
-  height: 197px;
-  width: 143px;
-  margin-left: -50px;
+  margin-left: -80px;
 }
 
 .carteennemi img {
-  height: 187px;
-  width: 133px;
-  border-radius: 7px;
+  height: 197px;
+  width: 143px;
 }
 
 #logo {
   position: absolute;
-  top: 1px;
-  left: -70px;
+  top: 7px;
+  left: 36%;
   transform: scale(60%);
 }
 
@@ -210,11 +247,57 @@ section {
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 150px;
-  width: 70%;
-  background-color: white;
-  top: 770px;
+  height: 0px;
+  width: 60%;
+  top: 955px;
   z-index: 100;
   border-radius: 40px;
   font-size: 50px;
+}
+
+#cache {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  margin-top: -95px;
+}
+
+#cachecontenu {
+  font-family: "planetn";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(32, 35, 77, 1);
+  color: white;
+  width: 87%;
+  height: 300px;
+  border-radius: 50px;
+  border: white solid 1px;
+  transition: 0.5s;
+}
+
+#cachecontenu:hover {
+  transform: scale(102%);
+}
+
+#fond {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  margin-top: -95px;
+  z-index: -1;
+}
+
+#fond img {
+  height: 110%;
 }
