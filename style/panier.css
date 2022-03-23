@@ -95,7 +95,7 @@
 }
 
 .droplang {
-  min-width: 5rem !important;
+  width: 5rem !important;
   text-align: center !important;
   background-color: #F3F4F2 !important;
   padding: 0 !important;
@@ -147,7 +147,7 @@
   text-align: center !important;
   background-color: #F3F4F2 !important;
   padding: 0 !important;
-  min-width: 20rem !important;
+  width: 20rem !important;
   inset: inherit !important;
   font-family: "planetn";
   border-radius: 0% !important;
@@ -184,7 +184,7 @@
   text-align: center !important;
   background-color: #F3F4F2 !important;
   padding: 0 !important;
-  min-width: 25rem !important;
+  width: 22rem !important;
   inset: inherit !important;
   font-family: "planetn";
   border-radius: 0% !important;
