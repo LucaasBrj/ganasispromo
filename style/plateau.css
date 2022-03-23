@@ -47,10 +47,10 @@ body {
 }
 
 section {
-  margin-top: 100px;
+  margin-top: 96px;
   background: rgba(32, 35, 77, 0.75);
   width: 87%;
-  height: 930px;
+  height: 932px;
   border-radius: 50px;
   border: white solid 1px;
 }
@@ -240,6 +240,11 @@ section {
   top: 7px;
   left: 36%;
   transform: scale(60%);
+  transition: 0.5s;
+}
+
+#logo:hover {
+  transform: scale(65%);
 }
 
 #hud {
@@ -300,4 +305,195 @@ section {
 
 #fond img {
   height: 110%;
+}
+
+#setjeton1 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: -37%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonastronaute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetonastronaute img {
+  height: 100px;
+  width: 100px;
+}
+
+#setjeton2 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: -25%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonsachet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetonsachet img {
+  height: 100px;
+  width: 100px;
+}
+
+#setjeton3 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: -13%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonoxygene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetonoxygene img {
+  height: 100px;
+  width: 100px;
+}
+
+#setjeton4 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: 11%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetoncommande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetoncommande img {
+  height: 100px;
+  width: 100px;
+}
+
+#setjeton5 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: 23%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonpistolet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetonpistolet img {
+  height: 100px;
+  width: 100px;
+}
+#setjeton6 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: 35%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonsatellite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetonsatellite img {
+  height: 100px;
+  width: 100px;
+}
+#setjetonbonus {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: -1%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonbonus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: 0px;
+}
+
+.jetonbonus img {
+  height: 100px;
+  width: 100px;
+}
+
+#setjeton7 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: 47%;
+  transform: rotate(180deg);
+  left: 170px;
+}
+
+.jetonvaisseau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: -50px;
+}
+
+.jetonvaisseau img {
+  height: 100px;
+  width: 100px;
+}
+
+.jeton {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.jeton:hover {
+  transform: scale(105%);
 }
