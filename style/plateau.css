@@ -238,7 +238,7 @@ section {
 #logo {
   position: absolute;
   top: 7px;
-  left: 36%;
+  left: 32%;
   transform: scale(60%);
   transition: 0.5s;
 }
@@ -496,4 +496,146 @@ section {
 
 .jeton:hover {
   transform: scale(105%);
+}
+
+@media (max-width: 1700px) {
+  section {
+    height: 770px;
+  }
+
+  #setjeton1 {
+    left: 120px;
+    margin-top: -39%;
+  }
+
+  #setjeton2 {
+    margin-top: -26%;
+    left: 120px;
+  }
+
+  #setjeton3 {
+    margin-top: -13%;
+    left: 120px;
+  }
+
+  #setjeton4 {
+    margin-top: 13%;
+    left: 120px;
+  }
+
+  #setjetonbonus {
+    margin-top: 0%;
+    left: 120px;
+  }
+
+  #setjeton5 {
+    margin-top: 26%;
+    left: 120px;
+  }
+  #setjeton6 {
+    margin-top: 39%;
+    left: 120px;
+  }
+  #setjeton7 {
+    margin-top: 52%;
+    left: 120px;
+  }
+  .jetonsatellite img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonastronaute img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonpistolet img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonsachet img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonoxygene img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonbonus img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonvaisseau img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetoncommande img {
+    width: 80px;
+    height: 80px;
+  }
+  .jetonbonus {
+    margin-left: -20px;
+  }
+  .carte img {
+    height: 220px;
+    width: 160px;
+  }
+
+  #pioche {
+    top: 120px;
+    left: 385px;
+    height: 200px;
+    width: 145px;
+    margin-left: 0%;
+    margin-top: 1%;
+  }
+
+  #pioche img {
+    height: 200px;
+    width: 150px;
+    margin-left: 2%;
+    margin-top: 0%;
+    border-radius: 10px;
+  }
+
+  #emplacement1 {
+    width: 145px;
+    height: 200px;
+    margin-top: 1.8%;
+    margin-left: 37%;
+    border-radius: 20px;
+  }
+
+  #emplacement2 {
+    border: 4px dashed rgb(255, 255, 255);
+    width: 200px;
+    height: 145px;
+    margin-top: 1.9%;
+    margin-left: 2%;
+    border-radius: 20px;
+  }
+
+  .carteennemi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-left: -100px;
+  }
+
+  .carteennemi img {
+    height: 185px;
+    width: 133px;
+  }
+
+  #deckennemi {
+    margin-top: -55%;
+    margin-right: 15%;
+  }
+
+  #hud {
+    height: 0px;
+    width: 60%;
+    top: 800px;
+    z-index: 100;
+  }
 }
