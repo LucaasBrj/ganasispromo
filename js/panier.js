@@ -172,7 +172,7 @@ function displayCart() {
             + "<td><button type='button' class='btn btn-close btn-outline-danger delete-item' data-name=" + cartArray[i].name + "></button></td>"
             + " = "
             + "</tr><tr>"
-            + "<td class='fs-6'>" + cartArray[i].total + "-€</td>"
+            + "<td class='fs-6'>Sous-total : " + cartArray[i].total + "-€</td>"
             + "</tr>";
     }
     
@@ -230,3 +230,5 @@ $('.show-cart').on("change", ".item-count", function (event) {
 
 
 displayCart();
+
+

@@ -492,7 +492,7 @@ textarea {
   left: 14px;
   width: 100%;
   top: 10px;
-  color: #aaa;
+  color: #373737;
   transition: 0.3s;
   z-index: -1;
   letter-spacing: 0.5px;
@@ -535,7 +535,7 @@ textarea {
   left: 0;
   width: 100%;
   top: 9px;
-  color: #aaa;
+  color: #373737;
   transition: 0.3s;
   z-index: -8;
   letter-spacing: 0.5px;
@@ -551,6 +551,72 @@ textarea {
 body {
   margin: auto;
   overflow-x: hidden;
+}
+
+/* form */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.fullwidth {
+  grid-column: span 2;
+}
+
+.fullmaxwidth {
+  width: 100%;
+  height: 100%;
+}
+
+input, textarea {
+  padding: 5px;
+}
+
+.submit {
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  font-family: "vampire";
+  border-radius: 100px;
+  border: none;
+  margin-top: 50px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  display: flex;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+.submit:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+  border: none;
+}
+
+.submit::after {
+  border: none;
+  content: "";
+  width: 102%;
+  height: 103%;
+  border-radius: 100px;
+  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-left: -320px;
+  margin-top: -6px;
 }
 
 #style-1 {
@@ -607,6 +673,10 @@ footer {
 .bordercolor {
   border: solid 1px;
   border-color: #C4C4C4;
+}
+
+.pan_vide {
+  height: 80vh;
 }
 
 /*# sourceMappingURL=panier.css.map */
