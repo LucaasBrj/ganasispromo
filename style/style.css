@@ -140,6 +140,35 @@ html {
   }
 }
 
+.container-fluid {
+  z-index: 1000;
+}
+
+#hautpage {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #13183f;
+  top: 770px;
+  right: 50px;
+  transition: 0.5s;
+}
+
+#hautpage:hover {
+  transform: scale(105%);
+}
+
+#hautpage img {
+  transform: rotate(180deg);
+  width: 80px;
+  border-radius: 100px;
+}
+
 .lg {
   padding-top: 8% !important;
   padding-bottom: 8% !important;
@@ -1158,12 +1187,19 @@ h7 {
     margin-left: 50px;
 } */
 @media (max-width: 1700px) {
+  html {
+    overflow-x: hidden;
+  }
   body {
     overflow-x: hidden;
   }
 
+  #hautpage {
+    top: 650px;
+  }
+
   #astronaute {
-    top: 3800px;
+    top: 3570px;
   }
 
   #regles {
@@ -1174,9 +1210,13 @@ h7 {
     margin-top: -250px;
   }
 
+  #flechenuage {
+    left: 660px;
+  }
+
   #txtsynopsis img {
     width: 110%;
-    margin-top: -500px;
+    margin-top: -800px;
   }
 
   #txtsynopsis {
@@ -1184,12 +1224,13 @@ h7 {
   }
 
   #imgsynopsis {
-    margin-left: 5%;
+    margin-left: 35%;
+    margin-top: -50%;
   }
 
   #imgtemporaire {
     height: 650px;
-    width: 600px;
+    width: 700px;
   }
 
   #synopsis p {
@@ -1202,6 +1243,10 @@ h7 {
 
   #txtdescription p {
     font-size: 30px;
+  }
+
+  #txtdescription h2 {
+    margin-bottom: 50px;
   }
 
   #txtdescription {
@@ -1240,7 +1285,7 @@ h7 {
   }
 
   #astronautev2 {
-    bottom: -11750px;
+    bottom: -12650px;
   }
 
   #responsivefooter {
