@@ -594,4 +594,14 @@ footer {
   font-size: 4rem;
 }
 
+.h12_pan {
+  background-color: #1E2663;
+  padding: 2% 0px 1% 0px;
+  color: #FFFFFF;
+}
+
+.h1_pan {
+  padding-left: 5%;
+}
+
 /*# sourceMappingURL=panier.css.map */

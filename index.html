@@ -83,46 +83,49 @@
                                 class="text-decoration-none h3nav">F.A.Q.</a></li>
                         <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="contact.html"
                                 class="text-decoration-none h3nav">contact</a></li>
-                        <li class="mrg_nav ms-0 my-auto pt-2">
-                            <button type="button" class="btn p-0 position-relative" data-bs-toggle="modal"
-                                data-bs-target="#cart">
-                                <img src="images/pictogramme panier.svg" alt="cart" width="38%" height="38%">
-                                <span
-                                    class="position-absolute top-100 start-25 translate-middle badge rounded-pill bg-danger total-count"></span>
-                            </button>
+                        <li class="mrg_nav ms-0 my-auto pt-2 ">
+                            <div class="dropdown">
+                                <a type="button" class="dropdown-toggle dropmen_pan_tgl btn p-0 position-relative" id="dropdownMenuLink3"
+                                    data-bs-auto-close="false" href="#panieroz" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        
+                                    <img src="images/pictogramme panier.svg" alt="cart" width="38%" height="38%">
+                                    <span
+                                        class="position-absolute top-100 start-25 translate-middle badge rounded-pill bg-danger total-count"></span>
+                                </a>
+                                <ul class="dropdown-menu dropmen_pan lh-base" id="panshow" aria-labelledby="dropdownMenuLink3">
+                                    <li><a class="dropdown-item py-3 fs-6" href="#">
+                                            <div class="row">
+                                                <div class="col-10">votre panier</div>
+                                                <div class="col-2"><button type="button" class="btn btn-close btn-outline-danger dropcloser"
+                                                        aria-label="Close"></button></button></div>
+                                                <hr>
+                                                <div class="col-4"><img src="images/packaging.png" alt="packaging" width="100%"></div>
+                                                <div class="col-8 arcon arcolr">
+                                                    <p class="fs-6">Jeu ganais complet</p>
+                                                    <table class="show-cart table">
+                        
+                                                    </table>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="fs-5">Total estimé : <span class="total-cart"></span>€</div>
+                                                </div>
+                                                <hr>
+                                                <div class="col-12">
+                                                    <button class="btn h3a m-0 confirmer_pan px-3">confirmer la commande</button>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="ms-0  my-auto pt-3">
                             <a href="#" data-name="Jeu" data-price="29.00" class="add-to-cart btn h3a m-0 acheter">acheter</a>
-        
                         </li>
-        
                     </ul>
                 </div>
             </div>
         </nav>
 
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <table class="show-cart table">
-
-                    </table>
-                    <div>Total : <span class="total-cart"></span>€</div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="clear-cart btn btn-danger" data-bs-dismiss="modal">Vider</button>
-                    <button type="button" class="btn btn-primary" id="panshow">Acheter</button>
-                </div>
-            </div>
-        </div>
     </div>
     <div id="hautpage">
         <a href="#nav"><img src="images/fleche.png" alt="retour haut de page"></a>
