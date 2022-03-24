@@ -638,4 +638,8 @@ section {
     top: 800px;
     z-index: 100;
   }
+
+  #cache {
+    height: 130%;
+  }
 }
