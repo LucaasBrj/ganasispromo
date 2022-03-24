@@ -604,4 +604,9 @@ footer {
   padding-left: 5%;
 }
 
+.bordercolor {
+  border: solid 1px;
+  border-color: #C4C4C4;
+}
+
 /*# sourceMappingURL=panier.css.map */
