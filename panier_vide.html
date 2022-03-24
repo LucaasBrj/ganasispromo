@@ -23,6 +23,7 @@
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
+    
     <script>
         new WOW().init();
     </script>
@@ -149,15 +150,18 @@
             </div>
         </div>
         <div class="row gap-3" id="panieroz">
-            <div class="col-12 pan_vide text-center ">
-                <img src="images/triste_1.png" alt="bonhome trise" width="5%">
-                
-                   <p>votre panier est vide</p>
+            <div class="col-12 pan_vide">
+                <div id="pan_null">
+                    <img src="images/triste_1.png" alt="bonhome trise" width="5%">
                 </div>
-                
-
+                <div id="pan_null1" class="planet">
+                    <h2>votre panier est vide !</h2>
+                </div>
+                <div id="vide_btn">
+                    <button class="btn h3a m-0 btnvide px-3">retour à l'accueil</button>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- FOOTER -->
     <footer class="w-100 py-4 flex-shrink-0">

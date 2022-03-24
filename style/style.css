@@ -28,6 +28,10 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  width: 100vw;
+}
+
 .planet, .h3nav, .h1m {
   font-family: "planetN", sans-serif;
 }
@@ -328,7 +332,7 @@ table {
 }
 
 .arcolr {
-  color: #373737;
+  color: #373737 !important;
 }
 
 .acheter {

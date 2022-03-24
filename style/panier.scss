@@ -119,4 +119,75 @@ footer {
 
 .pan_vide{
     height: 80vh;
+    
+}
+#pan_null{
+    height: 40%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pan_null1{
+ height: 10%;
+    align-items: center;
+    justify-content: center;
+    color: #A9AAAC;
+    text-align: center;
+}
+#vide_btn{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btnvide {
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  font-family: "vampire";
+  border-radius: 100px;
+  border: none;
+  margin-top: 50px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  display: flex;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.btnvide:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.btnvide:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+  border: none;
+}
+.btnvide::after {
+    border: none;
+    content: "";
+    width: 102%;
+    height: 103%;
+    border-radius: 100px;
+    background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-left: -193px;
+    margin-top: -6px;
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0 !important;
+}
+.placolor{
+    color: $secondaire !important;
 }
