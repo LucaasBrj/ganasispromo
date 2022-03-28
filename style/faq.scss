@@ -1,0 +1,179 @@
+@import 'color';
+@import 'font';
+@import 'nav';
+@import 'mixin';
+@import 'footerbleu';
+
+body {
+    margin: auto;
+    overflow-x: hidden;
+    
+}
+// scrollbar
+ #style-1{
+@include scrollbar($noir, $toniqueR, 12px !important);
+}
+
+#faq-bg{
+    background: url('../images/fond_étoiles.svg');
+
+    max-width: 100%;
+}
+.votfaq{
+    font-size: 4rem;
+}
+#nuage{
+    width: 110%;
+    margin-left: -70px;
+    height: 100%;
+    z-index: -1;
+}
+footer {
+    background-color: $dominante;
+}
+h2{
+    font-family: "planetN", sans-serif;
+}
+#vide_btn{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+//faq
+.accordion-button{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-left: 1px solid !important;
+    border-top: 1px solid !important;
+    border-right: 1px solid !important;
+    border-bottom: unset !important;
+    border-color: $dominante !important;
+    box-shadow: none !important;
+}
+.accordion-button:not(:focus) {
+    border: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: $noir !important;
+    background-color: #fff !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-left: 1px solid !important;
+    border-top: 1px solid !important;
+    border-right: 1px solid !important;
+    border-bottom: unset !important;
+    border-color: $dominante !important;
+}
+.accordion-collapse{
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-left: 1px solid !important;
+    border-bottom: 1px solid !important;
+    border-right: 1px solid !important;
+    border-top: unset !important;
+    border-color: $dominante !important;
+    color: #fff;
+    background-color: $dominante;
+}
+//btn
+.btnvide {
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  font-family: "vampire";
+  border-radius: 100px;
+  border: none;
+  margin-top: 50px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  display: flex;
+  border-radius: 36px !important;
+  padding-left: 3.65em !important;
+  padding-right: 3.65em !important;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.btnvide:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.btnvide:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+  border: none;
+}
+.btnvide::after {
+    border: none;
+    content: "";
+    width: 102%;
+    height: 103%;
+    border-radius: 100px;
+    background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-left: -193px;
+    margin-top: -6px;
+}
+.astrov3{
+    position: relative;
+}
+
+#astronautev3 {
+    position: absolute;
+    right: 10rem;
+    width: 7%;
+    z-index: -1;
+    bottom: -20%;
+}
+
+
+
+@media only screen and (max-width: 1400px){
+  #astronautev3 {
+    position: absolute;
+    right: 6rem;
+    width: 10%;
+    z-index: -1;
+    bottom: -15%;
+}
+h2{
+    font-size: 2rem !important;
+}
+.votfaq{
+    font-size: 3rem !important;
+}
+p .arcon{
+    font-size: 1rem !important;
+}
+}
+@media only screen and (max-width: 775px){
+  #astronautev3 {
+    position: absolute;
+    right: 5rem;
+    width: 10%;
+    z-index: -1;
+    bottom: -10%;
+}
+h2{
+    font-size: 1rem !important;
+}
+.votfaq{
+    font-size: 2rem !important;
+}
+p .arcon{
+    font-size: 0.5rem !important;
+}
+}
