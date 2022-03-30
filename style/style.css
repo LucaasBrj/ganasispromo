@@ -516,17 +516,17 @@ body {
   width: 100%;
 }
 
-#nuage {
+.nuage {
   margin-top: -420px;
   margin-left: -50px;
   width: 110%;
 }
 
-#flechenuage {
+.flechenuage {
   width: 7%;
 }
 
-#flechediv {
+.flechediv {
   margin-top: -300px;
   display: flex;
   justify-content: center;
@@ -691,7 +691,7 @@ h2 {
   display: flex;
 }
 
-#trait {
+.trait {
   margin-top: 16px;
   width: 700px;
   background-color: black;
@@ -734,12 +734,12 @@ h2 {
   margin-bottom: 100px;
 }
 
-#imgtemporaire3 {
+.imgtemporaire3 {
   width: 250px;
   margin-right: 70px;
 }
 
-#imgtemporaire3-2 {
+.imgtemporaire3-2 {
   width: 170px;
   margin-right: 70px;
 }
@@ -846,7 +846,7 @@ button:hover {
   padding: 100px;
 }
 
-#cartes #trait {
+#cartes .trait {
   background-color: white;
   width: 900px;
 }
@@ -863,7 +863,7 @@ button:hover {
   margin-top: -100px;
 }
 
-#plateau #trait {
+#plateau .trait {
   margin-top: -75px;
   background-color: black;
   width: 500px;
@@ -878,7 +878,7 @@ button:hover {
   margin-left: 15%;
 }
 
-#imgtemporaire5 {
+.imgtemporaire5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -896,11 +896,11 @@ button:hover {
   cursor: pointer;
 }
 
-#imgtemporaire5:hover {
+.imgtemporaire5:hover {
   transform: scale(103%);
 }
 
-#imgtemporaire5 img {
+.imgtemporaire5 img {
   width: 94%;
   height: 96%;
   border-radius: 50px;
@@ -1040,11 +1040,11 @@ button:hover {
   grid-column: 2;
 }
 
-#statsnb {
+.statsnb {
   display: flex;
 }
 
-#statsnb p {
+.statsnb p {
   margin-top: 90px;
   font-size: 50px;
   color: black;
@@ -1170,7 +1170,7 @@ h7 {
     padding-bottom: 150px;
   }
 
-  #flechediv {
+  .flechediv {
     margin-top: -250px;
   }
 
@@ -1217,7 +1217,7 @@ h7 {
     width: 550px;
   }
 
-  #trait {
+  .trait {
     width: 500px;
   }
 
@@ -1229,7 +1229,7 @@ h7 {
     margin-left: 10%;
   }
 
-  #cartes #trait {
+  #cartes .trait {
     width: 600px;
   }
 
@@ -1305,7 +1305,7 @@ h7 {
     margin-top: 700px;
   }
 
-  #cartes #trait {
+  #cartes .trait {
     width: 300px;
   }
 
@@ -1323,7 +1323,7 @@ h7 {
     display: none;
   }
 
-  #trait {
+  .trait {
     display: none;
   }
 
@@ -1423,12 +1423,12 @@ h7 {
     flex-direction: column;
   }
 
-  #statsnb {
+  .statsnb {
     display: flex;
     flex-direction: column;
   }
 
-  #statsnb p {
+  .statsnb p {
     margin-top: 20px;
     font-size: 70px;
   }
@@ -1555,7 +1555,7 @@ h7 {
     color: white;
   }
 
-  #nuage {
+  .nuage {
     width: 106%;
     margin-top: -200px;
   }

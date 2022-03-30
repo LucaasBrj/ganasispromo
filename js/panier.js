@@ -285,7 +285,7 @@ function pan_count() {
                 <div class="text-center text-white">
                     <p class="planet votpan">VOTRE PANIER</p>
                 </div>
-                <img id="nuage" src="images/nuage.svg">
+                <img class="nuage" src="images/nuage.svg" alt="nuage">
             </div>
         </div>
         <div class="row gap-3" id="panieroz">
@@ -299,42 +299,42 @@ function pan_count() {
                         <form action="" class="form">
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="text" placeholder="" id="nom" name="nom">
-                                <label for="nom">Nom</label>
+                                <label id="nom">Nom</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="text" placeholder="" id="prénom" name="prénom">
-                                <label for="prénom">Prénom</label>
+                                <label id="prénom">Prénom</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="text" placeholder="" id="adresse" name="adresse postale">
-                                <label for="adresse">Adresse</label>
+                                <label id="adresse">Adresse</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="number" placeholder="" id="cp" name="code postal">
-                                <label for="cp">Code Postal</label>
+                                <label id="cp">Code Postal</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="text" placeholder="" id="ville" name="ville">
-                                <label for="ville">Ville</label>
+                                <label id="ville">Ville</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="text" placeholder="" id="pays" name="pays">
-                                <label for="pays">Pays</label>
+                                <label id="pays">Pays</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="email" placeholder="" id="email" name="email">
-                                <label for="email">Email</label>
+                                <label id="email">Email</label>
                                 <span class="focus-border"></span>
                             </div>
                             <div class="col-nav input-effect">
                                 <input class="effect-17" type="tel" placeholder="" id="tel" name="numéro telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                                <label for="tel">Numéro de téléphone</label>
+                                <label id="tel">Numéro de téléphone</label>
                                 <span class="focus-border"></span>
                             </div>
                         <div class="fullwidth text-center">
@@ -395,7 +395,7 @@ function pan_count() {
                 <div class="text-center text-white">
                     <p class="planet votpan">VOTRE PANIER</p>
                 </div>
-                <img id="nuage" src="images/nuage.svg">
+                <img class="nuage" src="images/nuage.svg" alt="nuage">
             </div>
         </div>
         <div class="row gap-3" id="panieroz">
