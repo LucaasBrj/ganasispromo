@@ -7,7 +7,7 @@
 body {
     margin: auto;
     overflow-x: hidden;
-    
+    background-color: $dominante;
 }
 // scrollbar
  #style-1{
@@ -16,8 +16,11 @@ body {
 
 #faq-bg{
     background: url('../images/fond_étoiles.svg');
-
+    background-color: $dominante;
     max-width: 100%;
+}
+.row_bg{
+    background-color: $blanc;
 }
 .votfaq{
     font-size: 4rem;

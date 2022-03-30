@@ -555,6 +555,7 @@ textarea {
 body {
   margin: auto;
   overflow-x: hidden;
+  background-color: #1E2663;
 }
 
 #style-1 {
@@ -578,6 +579,7 @@ body {
   height: 97vh;
   max-width: 100%;
   position: relative;
+  background-color: #1E2663;
 }
 
 #contact-bot-img {

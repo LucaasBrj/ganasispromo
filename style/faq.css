@@ -393,6 +393,7 @@ footer .list-group-horizontal li {
 body {
   margin: auto;
   overflow-x: hidden;
+  background-color: #1E2663;
 }
 
 #style-1 {
@@ -413,7 +414,12 @@ body {
 
 #faq-bg {
   background: url("../images/fond_étoiles.svg");
+  background-color: #1E2663;
   max-width: 100%;
+}
+
+.row_bg {
+  background-color: #FFFFFF;
 }
 
 .votfaq {

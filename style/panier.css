@@ -641,7 +641,12 @@ input, textarea {
 
 #panier-bg {
   background: url("../images/fond_étoiles.svg");
+  background-color: #1E2663;
   max-width: 100%;
+}
+
+#vide {
+  background-color: #FFFFFF;
 }
 
 .nuage {

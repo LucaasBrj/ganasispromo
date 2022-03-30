@@ -81,9 +81,10 @@ input, textarea {
 
 #panier-bg{
     background: url('../images/fond_étoiles.svg');
-
+    background-color: $dominante;
     max-width: 100%;
 }
+#vide{background-color: $blanc;}
 .nuage{
     width: 110%;
     margin-left: -70px;

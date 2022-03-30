@@ -7,7 +7,7 @@
 body {
     margin: auto;
     overflow-x: hidden;
-    
+    background-color: $dominante;
 }
 
  // scrollbar
@@ -20,6 +20,8 @@ body {
     height: 97vh;
     max-width: 100%;
     position:relative;
+    background-color: $dominante;
+    
 }
 
 #contact-bot-img{
