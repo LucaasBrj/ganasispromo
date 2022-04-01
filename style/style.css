@@ -2,7 +2,9 @@
 /* Font */
 @font-face {
   font-family: "planetN";
-  src: url("../font/planetn.ttf") format("truetype"), url("../font/planetnital-webfont.woff2") format("woff2"), url("../font/planetnital-webfont.woff") format("woff");
+  src: url("../font/planetn.ttf") format("truetype"),
+    url("../font/planetnital-webfont.woff2") format("woff2"),
+    url("../font/planetnital-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "planetNcond";
@@ -14,17 +16,22 @@
 }
 @font-face {
   font-family: "arconregular";
-  src: url("../font/Arcon-Regular.otf") format("opentype"), url("../font/arcon-regular-webfont.woff2") format("woff2"), url("../font/arcon-regular-webfont.woff") format("woff");
+  src: url("../font/Arcon-Regular.otf") format("opentype"),
+    url("../font/arcon-regular-webfont.woff2") format("woff2"),
+    url("../font/arcon-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "vampire";
-  src: url("../font/vampirebrideexpand.ttf") format("truetype"), url("../font/vampirebrideexpand.otf") format("otf"), url("../font/vampirebrideexpand.ttf") format("truetype");
+  src: url("../font/vampirebrideexpand.ttf") format("truetype"),
+    url("../font/vampirebrideexpand.otf") format("otf"),
+    url("../font/vampirebrideexpand.ttf") format("truetype");
 }
 @font-face {
   font-family: "arconrounded-regular";
-  src: url("../font/arcon-rounded-regular-webfont.woff2") format("woff2"), url("../font/arcon-rounded-regular-webfont.woff") format("woff");
+  src: url("../font/arcon-rounded-regular-webfont.woff2") format("woff2"),
+    url("../font/arcon-rounded-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,15 +39,21 @@ html {
   width: 100vw;
 }
 
-.planet, .h3nav, .h1m {
+.planet,
+.h3nav,
+.h1m {
   font-family: "planetN", sans-serif;
 }
 
-.nova, .h2m {
+.nova,
+.h2m {
   font-family: "nova", sans-serif;
 }
 
-.arcon, .pm, .h3p, .h3a {
+.arcon,
+.pm,
+.h3p,
+.h3a {
   font-family: "arconregular", sans-serif;
 }
 
@@ -72,19 +85,19 @@ html {
 
 .h3nav {
   font-size: 16px !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   position: relative;
   padding: 10px 0px;
 }
 
 .h3a {
   font-size: 18px !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .h3p {
   font-size: 16px !important;
-  color: #D2D2D2 !important;
+  color: #d2d2d2 !important;
   position: relative;
   padding: 10px 0px;
 }
@@ -94,13 +107,13 @@ html {
 }
 
 .fb {
-  background-color: #1E2663;
+  background-color: #1e2663;
 }
 
 .droplang {
   width: 5rem !important;
   text-align: center !important;
-  background-color: #F3F4F2 !important;
+  background-color: #f3f4f2 !important;
   padding: 0 !important;
   border-radius: 0% !important;
   font-family: "arcon";
@@ -109,23 +122,28 @@ html {
 }
 
 @media only screen and (max-width: 992px) {
-  .droplang, .dropmen, .dropmen_pan {
+  .droplang,
+  .dropmen,
+  .dropmen_pan {
     margin-right: 20px !important;
   }
 }
-.droplang, .dropmen {
+.droplang,
+.dropmen {
   position: absolute;
   background: inherit;
   border-top: solid 3px #003399 !important;
   margin-top: 1.2em !important;
 }
-.droplang.hidden, .dropmen.hidden {
+.droplang.hidden,
+.dropmen.hidden {
   margin-top: 0.7em;
   visibility: hidden;
   opacity: 0;
 }
 @media only screen and (min-width: 992px) {
-  .droplang:before, .dropmen:before {
+  .droplang:before,
+  .dropmen:before {
     content: "";
     width: 0;
     height: 0;
@@ -134,21 +152,102 @@ html {
     border-bottom: 12px solid #003399;
     position: absolute;
     top: -0.9em;
-    left: calc(56px / 2 - .9em);
+    left: calc(56px / 2 - 0.9em);
     content: "";
     display: block;
   }
 }
 
+.container-fluid {
+  z-index: 10;
+}
+
+#cookie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-image: url("../images/cookies_fond.png");
+  background-size: contain;
+  width: 330px;
+  height: 450px;
+  color: white;
+  box-shadow: 0px 0px 155px 0px rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  bottom: 15px;
+  left: 15px;
+  transform: scale(90%);
+  transition: 0.3s;
+}
+
+#cookie h9 {
+  margin-top: 240px;
+  font-family: "vampire";
+  text-align: center;
+  font-size: 15pt;
+}
+
+#cookie p {
+  font-family: "arconrounded-regular";
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 100;
+  font-size: 11pt;
+  margin-top: 20px;
+}
+
+#cookie button {
+  width: 70%;
+  background-color: #6ecfff;
+  color: white;
+  font-family: "vampire";
+  font-size: 12pt;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+#cookie a {
+  color: white;
+  text-decoration: underline;
+}
+
+#hautpage {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #13183f;
+  top: 770px;
+  right: 50px;
+  transition: 0.5s;
+}
+
+#hautpage:hover {
+  transform: scale(105%);
+}
+
+#hautpage img {
+  transform: rotate(180deg);
+  width: 80px;
+  border-radius: 100px;
+  margin-right: 7px;
+}
+
 .lg {
   padding-top: 8% !important;
   padding-bottom: 8% !important;
-  border-top: solid 1px #1E2663 !important;
+  border-top: solid 1px #1e2663 !important;
 }
 
 .dropmen {
   text-align: center !important;
-  background-color: #F3F4F2 !important;
+  background-color: #f3f4f2 !important;
   padding: 0 !important;
   width: 20rem !important;
   inset: inherit !important;
@@ -185,7 +284,7 @@ html {
 
 .dropmen_pan {
   text-align: center !important;
-  background-color: #F3F4F2 !important;
+  background-color: #f3f4f2 !important;
   padding: 0 !important;
   width: 22rem !important;
   inset: inherit !important;
@@ -215,7 +314,7 @@ html {
 
 .sub:hover {
   background-color: #003399 !important;
-  color: #F3F4F2 !important;
+  color: #f3f4f2 !important;
 }
 
 .dropdown-toggle::after {
@@ -226,7 +325,8 @@ html {
   border: none !important;
 }
 
-.h3nav:after, .h3p:after {
+.h3nav:after,
+.h3p:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -239,7 +339,8 @@ html {
   width: 0;
 }
 
-.h3nav:hover:after, .h3p:hover:after {
+.h3nav:hover:after,
+.h3p:hover:after {
   width: 100%;
   left: 0;
 }
@@ -255,7 +356,8 @@ html {
   transition: 0.5s;
 }
 
-.acheter, .confirmer_pan {
+.acheter,
+.confirmer_pan {
   transition: 0.5s;
 }
 
@@ -271,7 +373,7 @@ html {
   width: 100%;
   height: 101%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -297,7 +399,7 @@ html {
   width: 102%;
   height: 105%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -317,7 +419,7 @@ html {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
@@ -346,7 +448,7 @@ table {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
@@ -478,7 +580,7 @@ body {
 }
 
 #style-1 {
-  scrollbar-color: #373737, #8683FD;
+  scrollbar-color: #373737, #8683fd;
   scrollbar-width: thin;
 }
 #style-1::-webkit-scrollbar-track {
@@ -490,7 +592,7 @@ body {
 }
 #style-1::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #8683FD;
+  background-color: #8683fd;
 }
 
 #minivaisseau {
@@ -523,7 +625,14 @@ body {
 }
 
 .flechenuage {
+  position: absolute;
   width: 7%;
+  left: 895px;
+  transition: 0.5s;
+}
+
+.flechenuage:hover {
+  transform: scale(105%);
 }
 
 .flechediv {
@@ -596,7 +705,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -617,7 +726,7 @@ body {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -747,9 +856,8 @@ h2 {
 #astronaute {
   position: absolute;
   height: 400px;
-  left: 150px;
-  top: 3950px;
-  transform: rotate(10deg);
+  left: 160px;
+  top: 3800px;
   z-index: -1;
 }
 
@@ -765,8 +873,12 @@ h2 {
   margin-bottom: -20px;
 }
 
+#forme3 {
+  margin-left: -5px;
+}
+
 #teaser {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   z-index: 1000;
@@ -792,7 +904,7 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -813,7 +925,7 @@ h2 {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -884,7 +996,6 @@ button:hover {
   align-items: center;
   width: 450px;
   height: 650px;
-  background-color: white;
   font-family: "arconregular";
   font-size: 60px;
   text-align: center;
@@ -930,7 +1041,7 @@ button:hover {
   align-items: center;
   width: 350px;
   height: 1000px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   font-family: "arconregular";
   font-size: 30px;
   text-align: center;
@@ -956,7 +1067,7 @@ button:hover {
   align-items: center;
   width: 80%;
   height: 800px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   font-family: "arconregular";
   font-size: 60px;
   text-align: center;
@@ -971,7 +1082,7 @@ button:hover {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -994,7 +1105,7 @@ button:hover {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1094,13 +1205,13 @@ h7 {
 
 #newsletter input {
   margin-top: 50px;
-  background-color: #1E2663;
+  background-color: #1e2663;
   border: none;
-  border-bottom: #C4C4C4 solid;
+  border-bottom: #c4c4c4 solid;
   width: 550px;
   height: 50px;
   font-size: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 #newsletter button:hover::after {
@@ -1112,7 +1223,7 @@ h7 {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -1132,7 +1243,7 @@ h7 {
   padding-right: 35px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1147,7 +1258,7 @@ h7 {
 
 #astronautev2 {
   position: absolute;
-  bottom: -11300px;
+  bottom: -12000px;
   right: 1px;
   height: 400px;
   transform: rotate(-10deg);
@@ -1537,7 +1648,7 @@ h7 {
   }
 
   #reseauxfooter {
-    background: #1E2663;
+    background: #1e2663;
     padding-top: 40px;
     padding-bottom: 110px;
     z-index: -50;

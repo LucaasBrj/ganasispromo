@@ -128,6 +128,12 @@
         </nav>
 
     </div>
+    <div id="cookie">
+        <h9>Nous utilisons des cookies</h9>
+        <p>Ce site utilise des cookies pour améliorer votre expérience de navigation.</p>
+        <button id="bcookie">Oui j'accepte</button>
+        <a href="#"><p>Non, je désire plus d'informations</p></a>
+    </div>
     <div id="hautpage">
         <a href="#nav"><img src="images/fleche.png" alt="retour haut de page"></a>
     </div>
@@ -319,6 +325,14 @@
         <p id="copyrights">Tous droits réservés © Refresh Agency 2022</p>
     </footer>
 <script src="js/panier.js"></script>
+      <script>
+          $(document).ready(function(){     
+  //Dès qu'on clique sur #b1, on applique hide() au titre
+  $("#bcookie").click(function(){
+      $("#cookie").css("left","-400px");
+  });
+});
+</script>
 </body>
 
 </html>

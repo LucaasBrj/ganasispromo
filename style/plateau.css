@@ -55,6 +55,79 @@ section {
   border: white solid 1px;
 }
 
+#chat {
+  position: absolute;
+  font-family: "vampire";
+  color: white;
+  top: 50px;
+  right: -470px;
+  height: 400px;
+  width: 500px;
+  background-color: rgb(91, 53, 230);
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#chat h3 {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 30pt;
+}
+
+#regles {
+  position: absolute;
+  font-family: "vampire";
+  color: white;
+  bottom: 50px;
+  right: -290px;
+  height: 400px;
+  width: 320px;
+  background-color: rgb(91, 53, 230);
+  opacity: 0.8;
+  z-index: 99;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#regles h3 {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 30pt;
+}
+
+#regles p:nth-child(2) {
+  margin-left: 35px;
+  font-size: 13pt;
+}
+
+#regles p {
+  font-size: 22pt;
+  margin-top: -10px;
+}
+
+#regles li {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+#regles li:nth-child(2) {
+  margin-left: 50px;
+}
+
+#regles li:nth-child(4) {
+  margin-left: 50px;
+}
+
+#regles li:nth-child(6) {
+  margin-left: 50px;
+}
+
+#regles ul {
+  margin-top: 40px;
+}
+
 #emplacement1 {
   border: 4px dashed rgb(255, 255, 255);
   border-style: d;
@@ -255,7 +328,7 @@ section {
   height: 0px;
   width: 60%;
   top: 955px;
-  z-index: 100;
+  z-index: 98;
   border-radius: 40px;
   font-size: 50px;
 }
@@ -269,7 +342,7 @@ section {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 100;
-  margin-top: -95px;
+  margin-top: -74px;
 }
 
 #cachecontenu {
@@ -636,7 +709,7 @@ section {
     height: 0px;
     width: 60%;
     top: 800px;
-    z-index: 100;
+    z-index: 98;
   }
 
   #cache {

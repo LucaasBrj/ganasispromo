@@ -29,6 +29,20 @@
     </script>
 </head>
 <body>
+    <div id="chat">
+        <h3>Chat</h3>
+    </div>
+    <div id="regles">
+        <h3>Regles</h3>
+        <p>Rappel</p>
+        <ul>
+            <li><p>Lorem Ipsum</p></li>
+            <li><p>Lorem Ipsum</p></li>
+            <li><p>Lorem Ipsum</p></li>
+            <li><p>Lorem Ipsum</p></li>
+            <li><p>Lorem Ipsum</p></li>
+        </ul>
+    </div>
     <a href="index.html"><img id="logo" src="images/logoblanc.svg"></body></a>
     <section>
         <div id="divemplacements">
@@ -257,11 +271,26 @@ document.querySelector( '#cachecontenu' ).addEventListener( 'click', function( e
             </script>
         <script>
             $(document).ready(function(){     
-    //Dès qu'on clique sur #b1, on applique hide() au titre
     $("#cachecontenu").click(function(){
         $("#cache").hide();
     });
 });
         </script>
+         <script>
+            $(document).ready(function(){   
+                $("#chat").hover(function(){  
+                $("#chat").css("right", "0px"); 
+            },function(){
+                $("#chat").css("right", "-470px");
+            }
+        );
+        $("#regles").hover(function(){  
+                $("#regles").css("right", "0px"); 
+            },function(){
+                $("#regles").css("right", "-290px");
+            }
+        );
+    });
+</script>
 </body>
 </html>
