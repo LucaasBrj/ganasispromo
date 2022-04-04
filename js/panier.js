@@ -364,7 +364,7 @@ function pan_count() {
                 <hr>
                 <div class="col-4"><img src="images/packaging.png" alt="packaging" width="100%"></div>
                 <div class="col-8 arcon arcolr">
-                    <p class="fs-6">Jeu ganais complet</p>
+                    <p class="fs-6">Jeu ganasis complet</p>
                     <table class="table arcon arcolr">
                     <tr style="border-style: unset !important">
                     <td class='fs-6'>Jeu</td>
