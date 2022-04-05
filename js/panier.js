@@ -368,7 +368,7 @@ function pan_count() {
                     <table class="table arcon arcolr">
                     <tr style="border-style: unset !important">
                     <td class='fs-6'>Jeu</td>
-                    <td class='fs-6'>(29€)</td>
+                    <td class='fs-6'>(19€)</td>
                     </tr><tr style="border-style: unset !important">
                     <td>
                     <input type='number' class='item-count form-control' data-name="jeu" value="`+ shoppingCart.totalCount() +`" disabled>
