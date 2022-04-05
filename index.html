@@ -132,7 +132,7 @@
         <h9>Nous utilisons des cookies</h9>
         <p>Ce site utilise des cookies pour améliorer votre expérience de navigation.</p>
         <button id="bcookie">Oui j'accepte</button>
-        <a href="#"><p>Non, je désire plus d'informations</p></a>
+        <a href="#" id="acookie"><p>Non, je désire plus d'informations</p></a>
     </div>
     <div id="hautpage">
         <a href="#nav"><img src="images/fleche.png" alt="retour haut de page"></a>
@@ -328,6 +328,9 @@
       <script>
           $(document).ready(function(){     
   //Dès qu'on clique sur #b1, on applique hide() au titre
+  $("#acookie").click(function(){
+      $("#cookie").css("left","-400px");
+  });
   $("#bcookie").click(function(){
       $("#cookie").css("left","-400px");
   });
