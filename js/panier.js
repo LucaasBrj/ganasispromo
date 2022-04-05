@@ -362,7 +362,7 @@ function pan_count() {
                 <div class="row bordercolor">
                 <div class="col-12 planet h12_pan">dans votre panier</div>
                 <hr>
-                <div class="col-4"><img src="images/packaging.png" alt="packaging" width="100%"></div>
+                <div class="col-4"><img src="images/packaging.png" alt="packaging" width="200%" style="margin-left: -40%;"></div>
                 <div class="col-8 arcon arcolr">
                     <p class="fs-6">Jeu ganasis complet</p>
                     <table class="table arcon arcolr">
