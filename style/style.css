@@ -178,6 +178,7 @@ html {
   left: 15px;
   transform: scale(90%);
   transition: 0.3s;
+  z-index: 1000;
 }
 
 #cookie h9 {

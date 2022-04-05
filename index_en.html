@@ -62,23 +62,22 @@
                             <div class="dropdown">
                                 <a class="dropdown-toggle text-decoration-none h3nav" href="#" role="button"
                                     id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    le jeu <span><img src="images/fleche_men.svg" alt="fleche" class="arrow_nav"></span>
+                                    The game <span><img src="images/fleche_men.svg" alt="fleche" class="arrow_nav"></span>
                                 </a>
         
                                 <ul class="dropdown-menu dropmen lh-base" aria-labelledby="dropdownMenuLink2">
-                                    <li><a class="dropdown-item sub" href="index_en.html#synopsistxt">l'histoire de
-                                            ganasis</a></li>
-                                    <li><a class="dropdown-item sub" href="index_en.html#regletitre">les regles du jeu</a>
+                                    <li><a class="dropdown-item sub" href="index_en.html#synopsistxt">the story of ganasis</a></li>
+                                    <li><a class="dropdown-item sub" href="index_en.html#regletitre">rules of the game</a>
                                     </li>
-                                    <li><a class="dropdown-item sub" href="index_en.html#teaser">le teaser</a></li>
-                                    <li><a class="dropdown-item sub" href="index_en.html#cartes">les cartes</a></li>
-                                    <li><a class="dropdown-item sub" href="plateau.html">le plateau</a></li>
-                                    <li><a class="dropdown-item sub" href="index_en.html#">le packaging</a></li>
-                                    <li><a class="dropdown-item sub" href="index_en.html#">les flyers</a></li>
+                                    <li><a class="dropdown-item sub" href="index_en.html#teaser">the teaser</a></li>
+                                    <li><a class="dropdown-item sub" href="index_en.html#cartes">the cards</a></li>
+                                    <li><a class="dropdown-item sub" href="index_en.html#plateau">the board</a></li>
+                                    <li><a class="dropdown-item sub" href="index_en.html#">the packaging</a></li>
+                                    <li><a class="dropdown-item sub" href="index_en.html#">the flyers</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="#" class="text-decoration-none h3nav">la
+                        <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="#" class="text-decoration-none h3nav">the
                                 démo</a></li>
                         <li class="mrg_nav ms-lg-2 ms-xxl-5 ms-0 my-auto pt-2"><a href="faq_en.html"
                                 class="text-decoration-none h3nav">F.A.Q.</a></li>
@@ -96,23 +95,24 @@
                                 <ul class="dropdown-menu dropmen_pan lh-base" id="panshow" aria-labelledby="dropdownMenuLink3">
                                     <li><a class="dropdown-item py-3 fs-6" href="#">
                                             <div class="row">
-                                                <div class="col-10">votre panier</div>
+                                                <div class="col-10">your cart</div>
                                                 <div class="col-2"><button type="button" class="btn btn-close btn-outline-danger dropcloser"
                                                         aria-label="Close"></button></div>
                                                 <hr>
-                                                <div class="col-4"><img src="images/packaging.png" alt="packaging" width="100%"></div>
+                                                <div class="col-4"><img src="images/packaging.png" alt="packaging" width="200%" style="margin-left: -40%;"></div>
                                                 <div class="col-8 arcon arcolr">
-                                                    <p class="fs-6">Jeu ganais complet</p>
+                                                    <p class="fs-6">Complete game of ganasis</p>
                                                     <table class="show-cart table">
                         
                                                     </table>
                                                 </div>
                                                 <div class="col-12">
-                                                    <div class="fs-5">Total estimé : <span class="total-cart"></span>€</div>
+                                                    <div class="fs-5">Total estimated : <span class="total-cart"></span>€</div>
                                                 </div>
                                                 <hr>
                                                 <div class="col-12">
-                                                    <button class="btn h3a m-0 confirmer_pan px-3" onclick="window.location='./panier_en.html'">confirmer la commande</button>
+                                                    <button class="btn h3a m-0 confirm_pan px-3" onclick="window.location='panier_en.html'">confirm the
+                                                    order</button>
                                                 </div>
                                             </div>
                                         </a></li>
@@ -120,7 +120,8 @@
                             </div>
                         </li>
                         <li class="ms-0  my-auto pt-3">
-                            <a href="#" data-name="Jeu" data-price="29.00" class="add-to-cart btn h3a m-0 acheter">acheter</a>
+                            <a href="#" data-name="Jeu" data-price="29.00"
+                                class="add-to-cart btn h3a m-0 buy_pan">Buy</a>
                         </li>
                     </ul>
                 </div>
@@ -286,29 +287,38 @@
         <section>
             <div id="logofooter">
                 <img src="images/logonoir.svg" alt="logo ganasis">
-                <p>Partez à la conquête de la station <br> Ganasis-H205 et devenez l’astronaute <br>
-                    attitré de la galaxie !</p>
+                <p>Conquer the <br> Ganasis-H205 station and
+                become the astronaut <br>
+                official of the galaxy!</p>
             </div>
             <div id="ganasisfooter">
-                <h8>LE JEU</h8>
+                <h8>THE GAME</h8>
                 <ul>
-                    <li>Acheter le jeu</li>
-                    <li>Découvrir le jeu</li>
-                    <li>Jouer à la démo</li>
-                    <li>Télécharger les flyers</li>
+                    <li><a href="panier_en.html" data-name="Jeu" data-price="29.00" class="add-to-cart" style="color: black !important;
+        text-decoration: none !important;">Buy the game</a></li>
+                    <li><a href="#" style="color: black !important;
+        text-decoration: none !important;">Discover the game</a></li>
+                    <li><a href="#" style="color: black !important;
+        text-decoration: none !important;">Play the demo</a></li>
+                    <li><a href="#" style="color: black !important;
+        text-decoration: none !important;">Download the flyers</a></li>
                 </ul>
             </div>
             <div id="proposfooter">
-                <h8>À PROPOS</h8>
+                <h8>ABOUT</h8>
                 <ul>
-                    <li>CGU / CGV</li>
-                    <li>Contact</li>
-                    <li>Gestion des cookies</li>
-                    <li>Mentions légales</li>
+                    <li><a href="CGV.pdf" target="_blank" style="color: black !important;
+        text-decoration: none !important;">CGU / CGV</a></li>
+                    <li><a href="contact_en.html" style="color: black !important;
+        text-decoration: none !important;">Contact</a></li>
+                    <li><a href="Mentions_legales_et_politique_de_confidentialite.pdf" target="_blank" style="color: black !important;
+        text-decoration: none !important;">Cookie management </a></li>
+                    <li><a href="Mentions_legales_et_politique_de_confidentialite.pdf" target="_blank" style="color: black !important;
+        text-decoration: none !important;">Legal Notice</a></li>
                 </ul>
             </div>
             <div id="reseauxfooter">
-                <h8>NOS RÉSEAUX</h8>
+                <h8>OUR NETWORKS</h8>
                 <div id="reseauxliste">
                     <img src="images/facebook_footer.png" alt="réseau facebook">
                     <img src="images/instagram_footer.png" alt="réseau instagram">
@@ -316,7 +326,7 @@
                 </div>
             </div>
         </section>
-        <p id="copyrights">Tous droits réservés © Refresh Agency 2022</p>
+        <p id="copyrights">All rights reserved © Refresh Agency 2022</p>
     </footer>
 <script src="js/panier.js"></script>
 </body>
