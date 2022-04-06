@@ -210,7 +210,7 @@ $('.show-cart').on("click", ".minus-item", function (event) {
     var name = $(this).data('name')
     shoppingCart.removeItemFromCart(name);
     displayCart();
-    
+
 
 })
 // +1
@@ -226,7 +226,7 @@ $('.show-cart').on("change", ".item-count", function (event) {
     var count = Number($(this).val());
     shoppingCart.setCountForItem(name, count);
     displayCart();
-    
+
 });
 
 $('.cartoshow').on("click", ".btn", function (event) {
@@ -371,13 +371,13 @@ function pan_count() {
                     <td class='fs-6'>(19€)</td>
                     </tr><tr style="border-style: unset !important">
                     <td>
-                    <input type='number' class='item-count form-control' data-name="jeu" value="`+ shoppingCart.totalCount() +`" disabled>
+                    <input type='number' class='item-count form-control' data-name="jeu" value="`+ shoppingCart.totalCount() + `" disabled>
                     </td>
                     </tr>
                     </table>
                 </div>
                 <div class="col-12 text-center">
-                    <div class="fs-5 planet placolor">Total estimé : <span>`+shoppingCart.totalCart()+`</span>€
+                    <div class="fs-5 planet placolor">Total estimé : <span>`+ shoppingCart.totalCart() + `</span>€
                     </div>
                 </div>
                 </div>
