@@ -2,7 +2,9 @@
 /* Font */
 @font-face {
   font-family: "planetN";
-  src: url("../font/planetn.ttf") format("truetype"), url("../font/planetnital-webfont.woff2") format("woff2"), url("../font/planetnital-webfont.woff") format("woff");
+  src: url("../font/planetn.ttf") format("truetype"),
+    url("../font/planetnital-webfont.woff2") format("woff2"),
+    url("../font/planetnital-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "planetNcond";
@@ -14,17 +16,22 @@
 }
 @font-face {
   font-family: "arconregular";
-  src: url("../font/Arcon-Regular.otf") format("opentype"), url("../font/arcon-regular-webfont.woff2") format("woff2"), url("../font/arcon-regular-webfont.woff") format("woff");
+  src: url("../font/Arcon-Regular.otf") format("opentype"),
+    url("../font/arcon-regular-webfont.woff2") format("woff2"),
+    url("../font/arcon-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "vampire";
-  src: url("../font/vampirebrideexpand.ttf") format("truetype"), url("../font/vampirebrideexpand.otf") format("otf"), url("../font/vampirebrideexpand.ttf") format("truetype");
+  src: url("../font/vampirebrideexpand.ttf") format("truetype"),
+    url("../font/vampirebrideexpand.otf") format("otf"),
+    url("../font/vampirebrideexpand.ttf") format("truetype");
 }
 @font-face {
   font-family: "arconrounded-regular";
-  src: url("../font/arcon-rounded-regular-webfont.woff2") format("woff2"), url("../font/arcon-rounded-regular-webfont.woff") format("woff");
+  src: url("../font/arcon-rounded-regular-webfont.woff2") format("woff2"),
+    url("../font/arcon-rounded-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,18 +39,31 @@ html {
   width: 100vw;
 }
 
-.planet, .h3nav, .h1m {
+.planet,
+.h3nav,
+.h1m {
   font-family: "planetN", sans-serif;
 }
 
-.nova, .h2m {
+.nova,
+.h2m {
   font-family: "nova", sans-serif;
 }
 
-.arcon, .pm, .h3p, .h3a {
+.arcon,
+.pm,
+.h3p,
+.h3a {
   font-family: "arconregular", sans-serif;
 }
 
+#txtsynopsis a {
+  text-decoration: none;
+}
+
+#teaser a {
+  text-decoration: none;
+}
 .vampire {
   font-family: "vampire", sans-serif;
 }
@@ -72,19 +92,19 @@ html {
 
 .h3nav {
   font-size: 16px !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   position: relative;
   padding: 10px 0px;
 }
 
 .h3a {
   font-size: 18px !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .h3p {
   font-size: 16px !important;
-  color: #D2D2D2 !important;
+  color: #d2d2d2 !important;
   position: relative;
   padding: 10px 0px;
 }
@@ -94,13 +114,13 @@ html {
 }
 
 .fb {
-  background-color: #1E2663;
+  background-color: #1e2663;
 }
 
 .droplang {
   width: 5rem !important;
   text-align: center !important;
-  background-color: #F3F4F2 !important;
+  background-color: #f3f4f2 !important;
   padding: 0 !important;
   border-radius: 0% !important;
   font-family: "arcon";
@@ -109,23 +129,28 @@ html {
 }
 
 @media only screen and (max-width: 992px) {
-  .droplang, .dropmen, .dropmen_pan {
+  .droplang,
+  .dropmen,
+  .dropmen_pan {
     margin-right: 20px !important;
   }
 }
-.droplang, .dropmen {
+.droplang,
+.dropmen {
   position: absolute;
   background: inherit;
   border-top: solid 3px #003399 !important;
   margin-top: 1.2em !important;
 }
-.droplang.hidden, .dropmen.hidden {
+.droplang.hidden,
+.dropmen.hidden {
   margin-top: 0.7em;
   visibility: hidden;
   opacity: 0;
 }
 @media only screen and (min-width: 992px) {
-  .droplang:before, .dropmen:before {
+  .droplang:before,
+  .dropmen:before {
     content: "";
     width: 0;
     height: 0;
@@ -134,7 +159,7 @@ html {
     border-bottom: 12px solid #003399;
     position: absolute;
     top: -0.9em;
-    left: calc(56px / 2 - .9em);
+    left: calc(56px / 2 - 0.9em);
     content: "";
     display: block;
   }
@@ -225,12 +250,12 @@ html {
 .lg {
   padding-top: 8% !important;
   padding-bottom: 8% !important;
-  border-top: solid 1px #1E2663 !important;
+  border-top: solid 1px #1e2663 !important;
 }
 
 .dropmen {
   text-align: center !important;
-  background-color: #F3F4F2 !important;
+  background-color: #f3f4f2 !important;
   padding: 0 !important;
   width: 20rem !important;
   inset: inherit !important;
@@ -267,7 +292,7 @@ html {
 
 .dropmen_pan {
   text-align: center !important;
-  background-color: #F3F4F2 !important;
+  background-color: #f3f4f2 !important;
   padding: 0 !important;
   width: 22rem !important;
   inset: inherit !important;
@@ -297,7 +322,7 @@ html {
 
 .sub:hover {
   background-color: #003399 !important;
-  color: #F3F4F2 !important;
+  color: #f3f4f2 !important;
 }
 
 .dropdown-toggle::after {
@@ -308,7 +333,8 @@ html {
   border: none !important;
 }
 
-.h3nav:after, .h3p:after {
+.h3nav:after,
+.h3p:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -321,7 +347,8 @@ html {
   width: 0;
 }
 
-.h3nav:hover:after, .h3p:hover:after {
+.h3nav:hover:after,
+.h3p:hover:after {
   width: 100%;
   left: 0;
 }
@@ -337,7 +364,8 @@ html {
   transition: 0.5s;
 }
 
-.acheter, .confirmer_pan {
+.acheter,
+.confirmer_pan {
   transition: 0.5s;
 }
 
@@ -353,7 +381,7 @@ html {
   width: 100%;
   height: 101%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -379,7 +407,7 @@ html {
   width: 102%;
   height: 105%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -399,7 +427,7 @@ html {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
@@ -428,7 +456,7 @@ table {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
@@ -458,7 +486,7 @@ table {
   width: 102%;
   height: 105%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -478,7 +506,7 @@ table {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
@@ -498,7 +526,7 @@ table {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   border-radius: 36px !important;
   padding-left: 3.65em !important;
@@ -512,7 +540,8 @@ table {
   transition: 0.5s;
 }
 
-.confirm_pan, .buy_pan {
+.confirm_pan,
+.buy_pan {
   transition: 0.5s;
 }
 
@@ -528,7 +557,7 @@ table {
   width: 100%;
   height: 101%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -656,7 +685,7 @@ body {
 }
 
 #style-1 {
-  scrollbar-color: #373737, #8683FD;
+  scrollbar-color: #373737, #8683fd;
   scrollbar-width: thin;
 }
 #style-1::-webkit-scrollbar-track {
@@ -668,7 +697,7 @@ body {
 }
 #style-1::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #8683FD;
+  background-color: #8683fd;
 }
 
 #minivaisseau {
@@ -701,7 +730,14 @@ body {
 }
 
 .flechenuage {
+  position: absolute;
   width: 7%;
+  left: 895px;
+  transition: 0.5s;
+}
+
+.flechenuage:hover {
+  transform: scale(105%);
 }
 
 .flechediv {
@@ -721,7 +757,7 @@ body {
 
 #imgtemporaire {
   height: 1100px;
-  margin-left: -300px;
+  margin-left: -550px;
 }
 
 #txtsynopsis {
@@ -774,7 +810,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -795,7 +831,7 @@ body {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -926,8 +962,7 @@ h2 {
   position: absolute;
   height: 400px;
   left: 150px;
-  top: 3950px;
-  transform: rotate(10deg);
+  top: 3850px;
   z-index: -1;
 }
 
@@ -943,8 +978,12 @@ h2 {
   margin-bottom: -20px;
 }
 
+#forme3 {
+  margin-left: -5px;
+}
+
 #teaser {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   z-index: 1000;
@@ -970,7 +1009,7 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -991,7 +1030,7 @@ h2 {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1062,7 +1101,6 @@ button:hover {
   align-items: center;
   width: 450px;
   height: 650px;
-  background-color: white;
   font-family: "arconregular";
   font-size: 60px;
   text-align: center;
@@ -1108,7 +1146,7 @@ button:hover {
   align-items: center;
   width: 350px;
   height: 1000px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   font-family: "arconregular";
   font-size: 30px;
   text-align: center;
@@ -1134,7 +1172,7 @@ button:hover {
   align-items: center;
   width: 80%;
   height: 800px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   font-family: "arconregular";
   font-size: 60px;
   text-align: center;
@@ -1149,7 +1187,7 @@ button:hover {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -1172,7 +1210,7 @@ button:hover {
   font-size: 30px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1272,13 +1310,13 @@ h7 {
 
 #newsletter input {
   margin-top: 50px;
-  background-color: #1E2663;
+  background-color: #1e2663;
   border: none;
-  border-bottom: #C4C4C4 solid;
+  border-bottom: #c4c4c4 solid;
   width: 550px;
   height: 50px;
   font-size: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 #newsletter button:hover::after {
@@ -1290,7 +1328,7 @@ h7 {
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(to right, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(to right, #44c8ff 14.26%, #7768ff 101.95%);
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -1310,7 +1348,7 @@ h7 {
   padding-right: 35px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(269.51deg, #44C8FF 14.26%, #7768FF 101.95%);
+  background: linear-gradient(269.51deg, #44c8ff 14.26%, #7768ff 101.95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1325,7 +1363,7 @@ h7 {
 
 #astronautev2 {
   position: absolute;
-  bottom: -11300px;
+  bottom: -12300px;
   right: 1px;
   height: 400px;
   transform: rotate(-10deg);
@@ -1340,8 +1378,11 @@ h7 {
     overflow-x: hidden;
   }
 
+  .flechenuage {
+    margin-left: -275px;
+  }
   #astronaute {
-    top: 3800px;
+    top: 3500px;
   }
 
   #regles {
@@ -1359,6 +1400,7 @@ h7 {
 
   #txtsynopsis {
     margin-right: 5%;
+    margin-left: -200px;
   }
 
   #imgsynopsis {
@@ -1367,7 +1409,9 @@ h7 {
 
   #imgtemporaire {
     height: 650px;
-    width: 600px;
+    width: 1100px;
+    margin-left: -270px;
+    margin-top: -200px;
   }
 
   #synopsis p {
@@ -1418,7 +1462,7 @@ h7 {
   }
 
   #astronautev2 {
-    bottom: -11750px;
+    bottom: -12250px;
   }
 
   #responsivefooter {
@@ -1715,7 +1759,7 @@ h7 {
   }
 
   #reseauxfooter {
-    background: #1E2663;
+    background: #1e2663;
     padding-top: 40px;
     padding-bottom: 110px;
     z-index: -50;

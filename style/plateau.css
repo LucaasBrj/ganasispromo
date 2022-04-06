@@ -62,6 +62,32 @@ section {
   border: white solid 1px;
 }
 
+#hautpage {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #13183f;
+  top: 20px;
+  left: 20px;
+  transition: 0.5s;
+  transform: scale(80%) rotate(270deg);
+}
+
+#hautpage:hover {
+  transform: scale(90%) rotate(270deg);
+}
+
+#hautpage img {
+  transform: rotate(180deg);
+  width: 80px;
+  border-radius: 100px;
+}
+
 #chat {
   position: absolute;
   font-family: "vampire";
@@ -325,7 +351,7 @@ section {
 #logo {
   position: absolute;
   top: 7px;
-  left: 32%;
+  left: 37%;
   transform: scale(60%);
   transition: 0.5s;
 }
@@ -669,7 +695,7 @@ section {
 
   #pioche {
     top: 120px;
-    left: 385px;
+    left: 358px;
     height: 200px;
     width: 145px;
     margin-left: 0%;
@@ -715,7 +741,7 @@ section {
   }
 
   #deckennemi {
-    margin-top: -55%;
+    margin-top: -58%;
     margin-right: 15%;
   }
 
@@ -728,5 +754,68 @@ section {
 
   #cache {
     height: 130%;
+  }
+
+  #carte2 {
+    margin-left: 2%;
+  }
+  #carte3 {
+    margin-left: 2%;
+  }
+  #carte4 {
+    margin-left: 2%;
+  }
+  #carte5 {
+    margin-left: 2%;
+  }
+
+  #logo {
+    left: 32%;
+  }
+
+  #hautpage {
+    transform: rotate(270deg) scale(70%);
+    left: 10px;
+    top: 10px;
+  }
+  #hautpage:hover {
+    transform: rotate(270deg) scale(80%);
+  }
+
+  #chat {
+    height: 400px;
+    width: 500px;
+  }
+
+  #chat h3 {
+    margin-top: 35px;
+  }
+
+  #regles {
+    height: 400px;
+  }
+  #regles h3 {
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 30pt;
+  }
+
+  #regles p:nth-child(2) {
+    margin-left: 80px;
+    font-size: 13pt;
+  }
+
+  #regles p {
+    font-size: 20pt;
+    margin-top: -10px;
+  }
+
+  #regles li {
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+
+  #regles ul {
+    margin-top: 20px;
   }
 }
