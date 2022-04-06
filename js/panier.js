@@ -407,7 +407,7 @@ function pan_count() {
                     <h2>votre panier est vide !</h2>
                 </div>
                 <div id="vide_btn">
-                    <button class="btn h3a m-0 btnvide px-3" onclick="window.location='/index.html'">retour à l'accueil</button>
+                    <button class="btn h3a m-0 btnvide px-3" onclick="window.location='index.html'">retour à l'accueil</button>
                 </div>
             </div>
         </div>
