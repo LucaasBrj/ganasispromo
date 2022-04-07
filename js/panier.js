@@ -167,7 +167,7 @@ function displayCart() {
             + "<td class='fs-6'>(" + cartArray[i].price + "€)</td>"
             + "</tr><tr>"
             + "<td><div class='input-group input-group-sm'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
-            + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+            + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "' disabled>"
             + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
             + "<td><button type='button' class='btn btn-close btn-outline-danger delete-item' data-name=" + cartArray[i].name + "></button></td>"
             + " = "
@@ -230,12 +230,8 @@ $('.show-cart').on("change", ".item-count", function (event) {
 });
 
 $('.cartoshow').on("click", ".btn", function (event) {
-    if (shoppingCart.totalCount() == 0) {
-        location.reload();
-    }
-    if (shoppingCart.totalCount() == 1) {
-        location.reload();
-    }
+    
+    location.reload();
 })
 
 /* panier.html #show-carte avec un E un "E" */
@@ -247,147 +243,134 @@ $('.carter').on("click", ".delete-item", function (event) {
 })
 // -1
 $('.carter').on("click", ".minus-item", function (event) {
-    if (shoppingCart.totalCount() == 0) {
-        location.reload();
-    }
-    if (shoppingCart.totalCount() == 1) {
-        location.reload();
-    }
-
+    
+    location.reload();
 })
 // +1
 $('.carter').on("click", ".plus-item", function (event) {
-    if (shoppingCart.totalCount() == 0) {
-        location.reload();
-    }
-    if (shoppingCart.totalCount() == 1) {
-        location.reload();
-    }
+    
+    location.reload();
 })
 
 // Item count input
 $('.carter').on("change", ".item-count", function (event) {
-    if (shoppingCart.totalCount() == 0) {
-        location.reload();
-    }
-    if (shoppingCart.totalCount() == 1) {
-        location.reload();
-    }
+    
+    location.reload();
 });
 displayCart();
 
 function pan_count() {
 
     var panier = `<!-- panier -->
-    <div class="contaner-fluid">
-        <div class="row h-100 justify-content-center m-0" id="panier-bg">
-            <div class="col">
-                <div class="text-center text-white">
-                    <p class="planet votpan">VOTRE PANIER</p>
-                </div>
-                <img class="nuage" src="images/nuage.svg" alt="nuage">
-            </div>
-        </div>
-        <div class="row gap-3" id="panieroz">
-            <div class="col-2"></div>
-            <div class="col-6">
-                <div class="row mb-3">
-                    <div class="col-12 h12_pan planet">
-                        <h1 class="fs-5 h1_pan">1. Options de livraison</h1>
+        <div class="contaner-fluid">
+            <div class="row h-100 justify-content-center m-0" id="panier-bg">
+                <div class="col">
+                    <div class="text-center text-white">
+                        <p class="planet votpan">VOTRE PANIER</p>
                     </div>
-                    <div class="form-contact arcon bordercolor pt-5 ps-3 pe-3 pb-3">
-                        <form action="" class="form">
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="text" placeholder="" id="nom" name="nom">
-                                <label id="nom">Nom</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="text" placeholder="" id="prénom" name="prénom">
-                                <label id="prénom">Prénom</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="text" placeholder="" id="adresse" name="adresse postale">
-                                <label id="adresse">Adresse</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="number" placeholder="" id="cp" name="code postal">
-                                <label id="cp">Code Postal</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="text" placeholder="" id="ville" name="ville">
-                                <label id="ville">Ville</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="text" placeholder="" id="pays" name="pays">
-                                <label id="pays">Pays</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="email" placeholder="" id="email" name="email">
-                                <label id="email">Email</label>
-                                <span class="focus-border"></span>
-                            </div>
-                            <div class="col-nav input-effect">
-                                <input class="effect-17" type="tel" placeholder="" id="tel" name="numéro telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                                <label id="tel">Numéro de téléphone</label>
-                                <span class="focus-border"></span>
-                            </div>
-                        <div class="fullwidth text-center">
-                            <button class="btn h3a submit mt-2">enregistrer et continuer</button>
-                            
+                    <img class="nuage" src="images/nuage.svg" alt="nuage">
+                </div>
+            </div>
+            <div class="row gap-3" id="panieroz">
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <div class="row mb-3">
+                        <div class="col-12 h12_pan planet">
+                            <h1 class="fs-5 h1_pan">1. Options de livraison</h1>
                         </div>
-                    </form>
-                </div>
-                </div>
-                
-                <div class="row mb-3">
-                    <div class="col-12 h12_pan planet">
-                        <h1 class="fs-5 h1_pan">2. PAIEMENT</h1>
+                        <div class="form-contact arcon bordercolor pt-5 ps-3 pe-3 pb-3">
+                            <form action="" class="form">
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="text" placeholder="" id="nom" name="nom">
+                                    <label id="nom">Nom</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="text" placeholder="" id="prénom" name="prénom">
+                                    <label id="prénom">Prénom</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="text" placeholder="" id="adresse" name="adresse postale">
+                                    <label id="adresse">Adresse</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="number" placeholder="" id="cp" name="code postal">
+                                    <label id="cp">Code Postal</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="text" placeholder="" id="ville" name="ville">
+                                    <label id="ville">Ville</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="text" placeholder="" id="pays" name="pays">
+                                    <label id="pays">Pays</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="email" placeholder="" id="email" name="email">
+                                    <label id="email">Email</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-nav input-effect">
+                                    <input class="effect-17" type="tel" placeholder="" id="tel" name="numéro telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                    <label id="tel">Numéro de téléphone</label>
+                                    <span class="focus-border"></span>
+                                </div>
+                            <div class="fullwidth text-center">
+                                <button class="btn h3a submit mt-2">enregistrer et continuer</button>
+                                
+                            </div>
+                        </form>
                     </div>
-
-                </div>
-                <div class="row mb-5">
-                    <div class="col-12 h12_pan planet">
-                        <h1 class="fs-5 h1_pan">3. RÉCAPITULATIF DE LA COMMANDE</h1>
                     </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-12 h12_pan planet">
+                            <h1 class="fs-5 h1_pan">2. PAIEMENT</h1>
+                        </div>
 
-                </div>
-            </div>
-            <div class="text-black col-3">
-                <div class="row bordercolor">
-                <div class="col-12 planet h12_pan">dans votre panier</div>
-                <hr>
-                <div class="col-4"><img src="images/packaging.png" alt="packaging" width="200%" style="margin-left: -40%;"></div>
-                <div class="col-8 arcon arcolr">
-                    <p class="fs-6">Jeu ganasis complet</p>
-                    <table class="table arcon arcolr">
-                    <tr style="border-style: unset !important">
-                    <td class='fs-6'>Jeu</td>
-                    <td class='fs-6'>(19€)</td>
-                    </tr><tr style="border-style: unset !important">
-                    <td>
-                    <input type='number' class='item-count form-control' data-name="jeu" value="`+ shoppingCart.totalCount() + `" disabled>
-                    </td>
-                    </tr>
-                    </table>
-                </div>
-                <div class="col-12 text-center">
-                    <div class="fs-5 planet placolor">Total estimé : <span>`+ shoppingCart.totalCart() + `</span>€
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-12 h12_pan planet">
+                            <h1 class="fs-5 h1_pan">3. RÉCAPITULATIF DE LA COMMANDE</h1>
+                        </div>
+
                     </div>
                 </div>
+                <div class="text-black col-3">
+                    <div class="row bordercolor">
+                    <div class="col-12 planet h12_pan">dans votre panier</div>
+                    <hr>
+                    <div class="col-4"><img src="images/packaging.png" alt="packaging" width="200%" style="margin-left: -40%;"></div>
+                    <div class="col-8 arcon arcolr">
+                        <p class="fs-6">Jeu ganasis complet</p>
+                        <table class="table arcon arcolr">
+                        <tr style="border-style: unset !important">
+                        <td class='fs-6'>Jeu</td>
+                        <td class='fs-6'>(19€)</td>
+                        </tr><tr style="border-style: unset !important">
+                        <td>
+                                <input type='number' class='item-count form-control' data-name="jeu" value="`+ shoppingCart.totalCount() + `" disabled>
+                                </td>
+                                </tr>
+                                </table>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="fs-5 planet placolor">Total estimé : <span>`+ shoppingCart.totalCart() + `</span>€
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1"></div>
+
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-1"></div>
-
-        </div>
-    </div>
-    </div>`;
+                  </div>`;
     var panier_vide = `<!-- panier -->
     <div class="contaner-fluid">
         <div class="row h-100 justify-content-center m-0" id="panier-bg">
